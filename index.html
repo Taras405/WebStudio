@@ -5,10 +5,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #group .timetable {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .person {
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
-
+    <header>
+        <h1>WebStudio</h1>
+        <nav>
+            <ul>
+                <li><a href="">Студія</a></li>
+                <li><a href="">Портфоліо</a></li>
+                <li><a href="">Контакти</a></li>
+                <li><a href="">info@devstudio.com</a></li>
+                <li><a href="">+380961111111</a></li>
+            </ul>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <section>
+            <h2>ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h2>
+            <button>Замовити послугу</button>
+        </section>
+        <div class="team-grid, timetable">
+            <div class="person">
+                <h2>УВАГА ДО ДЕТАЛЕЙ</h2>
+                <p>Ідейні міркування, і навіть початок повсякденної роботи з фотмування позицій</p>
+            </div>
+            <div class="person">
+                <h2>ПУНКТУАЛЬНІСТЬ</h2>
+                <p>Завдання організації, особливо рамки і місце навчання кадрів тігне у себе.</p>
+            </div>
+            <div class="person">
+                <h2>ПЛАНУВАННЯ</h2>
+                <p>Так само консультація з широким активом значною мірою зумовлює.</p>
+            </div>
+            <div class="person">
+                <h2>СУЧАСНІ ТЕХНОЛОГІЇ</h2>
+                <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань</p>
+            </div>
+        </div>
+        <section>
+            <h2><strong>Чим ми займаємося</strong></h2>
+            <img src="img/box1.jpg" alt="німа">
+            <img src="img/box2.png" alt="німа">
+            <img src="img/box3.png" alt="німа">
+        </section>
+        <section id="group">
+            <h2>НАША ГРУПА</h2>
+            <div class="team-grid, timetable">
+                <div class="person">
+                    <img src="img/img1.jpg" alt="німа">
+                    <h2><strong>Ігор Дем'яненко</strong></h2>
+                    <p>Product Designer</p>
+                </div>
+                <div class="person">
+                    <img src="img/img2.jpg" alt="німа">
+                    <h2><strong>Ольга Рєпіна</strong></h2>
+                    <p>Frontend Developer</p>
+                </div>
+                <div class="person">
+                    <img src="img/img3.jpg" alt="німа">
+                    <h2><strong>Микола Тарасов</strong></h2>
+                    <p>Marketing</p>
+                </div>
+                <div class="person">
+                    <img src="img/img4.jpg" alt="німа">
+                    <h2><strong>Михайло Єрмаков</strong></h2>
+                    <p>UI Designer</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <hr>
+    <footer>
+        <h3>WebStudio</h3>
+        <address>
+            <p>м. Київ, пр-т Лесі Українки, 26</p>
+        </address>
+        <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <br>
+        <a href="tel:+380961111111">+380961111111</a>
+    </footer>
 </body>
 
 </html>
