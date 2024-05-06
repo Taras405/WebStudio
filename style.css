@@ -1,0 +1,22 @@
+#group .timetable {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.person {
+    text-align: center;
+}
+
+header+h1 {
+    background-image: radial-gradient(blue, white);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
