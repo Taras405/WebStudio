@@ -3,6 +3,10 @@
     flex-wrap: wrap;
 }
 
+#group {
+    background-color: whitesmoke;
+}
+
 .team-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -13,10 +17,18 @@
     text-align: center;
 }
 
-header+h1 {
-    background-image: radial-gradient(blue, white);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    background-clip: text;
-    color: transparent;
+#button {
+    background-color: blue;
+}
+
+.blue {
+    color: blue;
+}
+
+.white {
+    color: white;
+}
+
+#section {
+    background-color: gray;
 }
