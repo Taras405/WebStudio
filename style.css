@@ -1,3 +1,14 @@
+:root {
+    --lightgrey: #212121;
+    --grey: #757575;
+    --white: #ffff;
+    --blue: #2196F3;
+    --black: #000000;
+    --darkgrey: #2F303A;
+    --dirtywhite: #ECECEC;
+    --creamwhite: #F5F4FA;
+}
+
 #group .timetable {
     display: flex;
     flex-wrap: wrap;
