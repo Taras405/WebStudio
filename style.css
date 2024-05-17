@@ -30,6 +30,14 @@
 
 #button {
     background-color: var(--blue);
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 6%;
+    border-radius: 4px;
+    border: none;
 }
 
 .blue {
@@ -44,22 +52,57 @@
     background-color: var(--darkgrey);
 }
 
-.left {
-    text-align: left;
-}
-
-.right {
-    text-align: right;
-}
-
-.center {
-    text-align: center;
-}
-
-h1+h3 {
-    font-family: "Raleway", sans-serif;
-}
-
 body {
     font-family: "Roboto", sans-serif;
+}
+
+/* імя людей */
+.name-person {
+    font-weight: Medium;
+    font-size: 16px;
+}
+
+/* чим займаються */
+.make {
+    font-weight: Regular;
+    font-size: 14px;
+}
+
+/* заголовки */
+.headers {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+/* наші вмяння,переваги */
+.advantages {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+/* розпис вмінь,переваг */
+.paragraf {
+    font-weight: Regular;
+    font-size: 14px;
+}
+
+/* ефективні рішення для вашого бізнесу */
+.advertisement {
+    font-weight: black;
+    font-size: 44px;
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: 6%;
+}
+
+.WebStudio {
+    text-align: left;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: auto;
+    letter-spacing: 3%;
+}
+
+img {
+    margin-right: 30px;
 }
