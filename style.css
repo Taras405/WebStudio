@@ -15,7 +15,7 @@
 }
 
 #group {
-    background-color: whitesmoke;
+    background-color: var(--creamwhite);
 }
 
 .team-grid {
@@ -29,19 +29,19 @@
 }
 
 #button {
-    background-color: blue;
+    background-color: var(--blue);
 }
 
 .blue {
-    color: blue;
+    color: var(--blue);
 }
 
 .white {
-    color: white;
+    color: var(--white);
 }
 
 #section {
-    background-color: gray;
+    background-color: var(--darkgrey);
 }
 
 .left {
@@ -54,4 +54,12 @@
 
 .center {
     text-align: center;
+}
+
+h1+h3 {
+    font-family: "Raleway", sans-serif;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
 }
