@@ -9,6 +9,115 @@
     --creamwhite: #F5F4FA;
 }
 
+/* header */
+
+.header-nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.header-nav li {
+    margin: 0 15px;
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.contact {
+    text-decoration: none;
+    color: var(--blue);
+    margin-bottom: 5px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+
+/* main */
+
+#section {
+    background-color: var(--darkgrey);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 110px;
+}
+
+/* ефективні рішення для вашого бізнесу */
+.advertisement {
+    font-weight: black;
+    text-align: center !important;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 6%;
+    color: var(--white);
+}
+
+#button {
+    background-color: var(--blue);
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 50px;
+    letter-spacing: 6%;
+    border-radius: 4px;
+    border: none;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+.advantages-section {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.advantage {
+    flex: 1 1 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+/* наші вмяння,переваги */
+.advantages {
+    font-weight: bold;
+    font-size: 14px;
+    text-align: left;
+}
+
+/* розпис вмінь,переваг */
+.paragraf {
+    font-weight: Regular;
+    font-size: 14px;
+    text-align: left;
+    color: var(--grey);
+}
+
+.my-text {
+    display: flex;
+    justify-content: center;
+}
+
+/* заголовки */
+.headers {
+    font-weight: bold;
+    font-size: 36px;
+}
+
+/* чим займаємося, наша група */
+
 #group .timetable {
     display: flex;
     flex-wrap: wrap;
@@ -28,42 +137,6 @@
     text-align: center;
 }
 
-#button {
-    background-color: var(--blue);
-    display: inline-block;
-    text-align: center;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 50px;
-    letter-spacing: 6%;
-    border-radius: 4px;
-    border: none;
-    padding: 0 20px;
-    margin-top: 20px;
-}
-
-.blue {
-    color: var(--blue);
-}
-
-.white {
-    color: var(--white);
-}
-
-#section {
-    background-color: var(--darkgrey);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 100px;
-
-}
-
-body {
-    font-family: "Roboto", sans-serif;
-}
-
 /* імя людей */
 .name-person {
     font-weight: Medium;
@@ -76,35 +149,12 @@ body {
     font-size: 14px;
 }
 
-/* заголовки */
-.headers {
-    font-weight: bold;
-    font-size: 36px;
-}
+/* footer */
 
-/* наші вмяння,переваги */
-.advantages {
-    font-weight: bold;
-    font-size: 14px;
-    text-align: left;
-}
-
-/* розпис вмінь,переваг */
-.paragraf {
-    font-weight: Regular;
-    font-size: 14px;
-    text-align: left;
-    color: var(--grey);
-}
-
-/* ефективні рішення для вашого бізнесу */
-.advertisement {
-    font-weight: black;
-    text-align: center !important;
-    font-size: 44px;
-    line-height: 60px;
-    letter-spacing: 6%;
-    color: var(--white);
+#section-footer {
+    background-color: var(--darkgrey);
+    display: flex;
+    flex-direction: column;
 }
 
 .WebStudio {
@@ -115,46 +165,20 @@ body {
     letter-spacing: 3%;
 }
 
+body {
+    font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
 img {
     margin-right: 30px;
 }
 
-
-.my-text {
-    display: flex;
-    justify-content: center;
+.blue {
+    color: var(--blue);
 }
 
-.advertisement {
-    font-weight: black;
-    font-size: 44px;
-    line-height: 60px;
-    letter-spacing: 6%;
-    text-align: left;
-}
-
-.advantages-section {
-    display: flex;
-    justify-content: space-around;
-    margin: 20px 0;
-    padding: 0 20px;
-    flex-wrap: wrap;
-}
-
-.advantage {
-    flex: 1 1 200px;
-    margin: 10px;
-    text-align: center;
-}
-
-#section-footer {
-    background-color: var(--darkgrey);
-    display: flex;
-    flex-direction: column;
-}
-
-.header-nav {
-    flex: 1 1 200px;
-    margin: 10px;
-    text-align: center;
+.white {
+    color: var(--white);
 }
