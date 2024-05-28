@@ -57,7 +57,7 @@
     font-weight: black;
     text-align: center !important;
     font-size: 44px;
-    line-height: 60px;
+    line-height: 1.36;
     letter-spacing: 6%;
     color: var(--white);
 }
@@ -99,7 +99,6 @@
 
 /* розпис вмінь,переваг */
 .paragraf {
-    font-weight: Regular;
     font-size: 14px;
     text-align: left;
     color: var(--grey);
@@ -145,7 +144,6 @@
 
 /* чим займаються */
 .make {
-    font-weight: Regular;
     font-size: 14px;
 }
 
