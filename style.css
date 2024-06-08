@@ -83,7 +83,7 @@
     max-height: 98px;
     display: flex;
     justify-content: space-around;
-    margin: 0 30px;
+    margin: 94px 0;
     flex-wrap: wrap;
 }
 
@@ -117,14 +117,31 @@
     text-align: center;
     font-weight: bold;
     font-size: 36px;
+    padding-top: 94px;
 }
 
-/* чим займаємося, наша група */
+/* чим займаємося */
+
+.container-box {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 94px;
+}
+
+.headers-box {
+    font-weight: bold;
+    font-size: 36px;
+    padding-top: 94px;
+}
+
+.box {
+    margin: 0 30px;
+}
+
+/* наша група */
 
 .container-group {
     background-color: var(--creamwhite);
-    display: flex;
-    flex-wrap: wrap;
     padding-bottom: 94px;
 }
 
@@ -134,6 +151,7 @@
 }
 
 .person {
+    width: auto;
     text-align: center;
     margin: 0 30px;
     background-color: var(--white);
@@ -172,6 +190,8 @@ body {
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
+    /* width: 1600px;
+    height: 2346px; */
 }
 
 img {
