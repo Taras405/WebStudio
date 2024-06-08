@@ -43,7 +43,9 @@
 
 /* main */
 
-#section {
+.container-section {
+    max-width: 1600px;
+    max-height: 600px;
     background-color: var(--darkgrey);
     display: flex;
     flex-direction: column;
@@ -76,11 +78,12 @@
     margin-top: 20px;
 }
 
-.advantages-section {
+.main-container {
+    max-width: 1170px;
+    max-height: 98px;
     display: flex;
     justify-content: space-around;
-    margin: 20px 0;
-    padding: 0 20px;
+    margin: 0 30px;
     flex-wrap: wrap;
 }
 
@@ -111,29 +114,31 @@
 
 /* заголовки */
 .headers {
+    text-align: center;
     font-weight: bold;
     font-size: 36px;
 }
 
 /* чим займаємося, наша група */
 
-#group .timetable {
+.container-group {
+    background-color: var(--creamwhite);
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 94px;
+}
+
+.team-grid {
     display: flex;
     flex-wrap: wrap;
 }
 
-#group {
-    background-color: var(--creamwhite);
-}
-
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-}
-
 .person {
     text-align: center;
+    margin: 0 30px;
+    background-color: var(--white);
+    width: 270px;
+    height: 368px;
 }
 
 /* імя людей */
@@ -149,7 +154,7 @@
 
 /* footer */
 
-#section-footer {
+.footer-container {
     background-color: var(--darkgrey);
     display: flex;
     flex-direction: column;
