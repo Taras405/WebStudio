@@ -151,7 +151,6 @@
 }
 
 .person {
-    width: auto;
     text-align: center;
     margin: 0 30px;
     background-color: var(--white);
@@ -174,6 +173,8 @@
 
 .footer-container {
     background-color: var(--darkgrey);
+    width: 1600px;
+    height: 252px;
     display: flex;
     flex-direction: column;
 }
