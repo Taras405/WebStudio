@@ -13,7 +13,7 @@
 
 .header-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 1600px;
     height: 80px;
