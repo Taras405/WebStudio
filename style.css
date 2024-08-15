@@ -42,6 +42,7 @@
 
 .container-section {
     background-image: url(img/background1.png);
+    background-repeat: no-repeat;
     background-color: var(--darkgrey);
     display: flex;
     flex-direction: column;
@@ -76,15 +77,21 @@
 
 .main-container {
     display: flex;
-    justify-content: space-around;
-    margin: 94px 0;
-    flex-wrap: wrap;
+    margin-top: 94px;
 }
 
 .advantage {
     flex: 1 1 200px;
     margin: 10px;
     text-align: center;
+}
+
+.advantage h2 {
+    margin-left: 25px;
+}
+
+.advantage p {
+    margin-left: 25px;
 }
 
 /* icon */
@@ -119,7 +126,6 @@
     text-align: center;
     font-weight: bold;
     font-size: 36px;
-    padding-top: 94px;
 }
 
 /* чим займаємося */
@@ -198,6 +204,14 @@
 .person-icon {
     display: flex;
     padding-left: 40px;
+}
+
+.icon-hever:hover {
+    background-color: #2196F3;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
 }
 
 /* імя людей */
