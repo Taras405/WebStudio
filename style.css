@@ -13,8 +13,13 @@
 
 .header-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    text-align: center;
+}
+
+.header-container h1 {
+    text-align: center;
 }
 
 .header-nav-list {
@@ -24,8 +29,19 @@
     margin: 0;
 }
 
+.header-nav{
+    margin-left: 93px;
+    margin-right: 318px;
+}
+
 .header-nav-item {
     margin: 0 15px;
+    align-items: flex-end;
+}
+
+.header-nav-link:hover {
+    color: #2196F3;
+    transition: 0.2s ease;
 }
 
 .header-nav-link {
@@ -36,6 +52,39 @@
 .header-a {
     text-decoration: none;
     padding: 0 10px;
+    cursor: pointer;
+    color: #757575;
+}
+
+.header-a:hover {
+    text-decoration: none;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #2196F3;
+    transition: 0.2s ease;
+}
+
+.svg-head{
+    width: 106px;
+    height: 12px;
+    fill: #AFB1B8;
+    margin-left: -90px;
+}
+
+.svg-head:hover{
+    fill: #2196F3;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.WebStudio {
+    text-align: left;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: auto;
+    letter-spacing: 3%;
+    cursor: pointer;
+    margin-left: -20px;
 }
 
 /* main */
@@ -44,6 +93,8 @@
     background-image: url(img/background1.png);
     background-repeat: no-repeat;
     background-color: var(--darkgrey);
+    background-size: cover;
+    justify-content: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,18 +153,15 @@
     background-color: var(--creamwhite);
 }
 
-.svg{
+.svg {
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
     margin-left: -30px;
     border-radius: 5px;
-    
+
 }
 
-.use-svg{
-    
-}
 
 /* наші вмяння,переваги */
 .advantages {
@@ -123,6 +171,12 @@
 }
 
 /* розпис вмінь,переваг */
+
+.section-2{
+    display: flex;
+    justify-content: center;
+}
+
 .paragraf {
     font-size: 14px;
     text-align: left;
@@ -130,18 +184,14 @@
 }
 
 .my-text {
-    display: flex;
-    justify-content: center;
+    /* margin-left: -45px; */
 }
 
-/* заголовки */
 .headers {
     text-align: center;
     font-weight: bold;
     font-size: 36px;
 }
-
-/* чим займаємося */
 
 .container-box {
     flex-wrap: wrap;
@@ -157,6 +207,7 @@
 .box-section {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .box {
@@ -201,6 +252,7 @@
 .team-grid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .person {
@@ -215,15 +267,23 @@
 
 .person-icon {
     display: flex;
-    padding-left: 20px;
+    padding-left: 28px;
+    gap: 10px;
+
+}
+
+.icon-hever {
+    fill: #AFB1B8;
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
 }
 
 .icon-hever:hover {
     background-color: #2196F3;
-    color: #FFFFFF;
+    fill: #FFFFFF;
     border: none;
-    /* border-radius: 20px; */
-    /* padding: 10px; */
+    transition: 0.7s ease;
 }
 
 /* імя людей */
@@ -252,10 +312,10 @@
     margin-right: 30px;
     width: 104px;
     height: 56px;
-    
+    fill: #AFB1B8;
 }
 
-.logo-img:hover  {
+.logo-img:hover {
     padding: 16px 32px;
     border: 1px solid #2196F3;
     border-radius: 4px;
@@ -266,18 +326,18 @@
     fill: #2196F3;
 }
 
-svg:hover {
-    fill: #2196F3;
-}
+
 
 /* footer */
 
-.footer{
+.footer {
     background-color: var(--darkgrey);
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
 
-.footer-container {
+.footer-container{
     height: 252px;
     display: flex;
     flex-direction: column;
@@ -285,48 +345,54 @@ svg:hover {
     margin-top: 60px;
 }
 
-.footer-section{
+.footer-section {
     margin-top: 72px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 15px;
 }
 
-.WebStudio {
+.WebStudio2 {
     text-align: left;
     font-weight: bold;
     font-size: 26px;
     line-height: auto;
     letter-spacing: 3%;
+    cursor: pointer;
 }
 
-.footer-icon {
-    padding: 12px;
-    border-radius: 19px;
-    border: none;
-    background-color: #55565d7e;
-    margin-right: 10px;
+.icon-footer{
+    fill: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.1);
 }
 
-.footer-icon:hover {
-    padding: 12px;
-    border-radius: 19px;
+.icon-footer:hover{
+    border-radius: 100%;
     border: none;
+    fill: #FFFFFF;
     background-color: #2196F3;
     transition: 0.7s ease;
 }
 
-h4{
+h4 {
     color: #FFFFFF;
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 14px;
     letter-spacing: 3%;
     line-height: 16.41px;
+    margin-left: 10px;
 }
 
 body {
     font-family: "Roboto", sans-serif;
     margin: 0;
     padding: 0;
-    
+
 }
 
 .blue {
@@ -337,8 +403,12 @@ body {
     color: var(--white);
 }
 
+button {
+    cursor: pointer;
+}
+
 .text-decoration {
-    text-decoration: none;   
+    text-decoration: none;
     margin-left: 10px;
 }
 
@@ -376,7 +446,7 @@ body {
 }
 
 .project {
-    border:1px #EEEEEE solid;
+    border: 1px #EEEEEE solid;
     width: 370px;
     height: 436px;
     margin: 30px;

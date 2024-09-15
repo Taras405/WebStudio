@@ -20,20 +20,26 @@
 
 <body>
     <header class="header-container">
-        <h1 class="WebStudio"><span class="blue" style="font-family: Raleway, sans-serif;">Web</span>Studio</h1>
+        <h1 class="WebStudio"><span class="blue">Web</span>Studio</h1>
         <nav class="header-nav">
             <ul class="header-nav-list">
                 <li class="header-nav-item"><a href="index.html" class="header-nav-link active">Студія</a></li>
-                <li class="header-nav-item"><a href="" class="header-nav-link" style="color: var(--blue);">Портфоліо</a>
-                </li>
+                <li class="header-nav-item"><a href="portfolio.html" class="header-nav-link" style="color: #2196F3;">Портфоліо</a></li>
                 <li class="header-nav-item"><a href="" class="header-nav-link">Контакти</a></li>
             </ul>
         </nav>
         <div>
-            <a href="" style="color: var(--blue);" class="header-a">info@devstudio.com</a>
+            <svg class="svg-head">
+                <use width="16" height="12" x="90" href="symbol-defs.svg#icon-envelope" class="svg-use">
+                </use>
+            </svg>
+            <a href="" class="header-a">info@devstudio.com</a>
+            <svg class="svg-head">
+                <use width="16" height="12" x="90" href="symbol-defs.svg#icon-smartphone" class="svg-use">
+                </use>
+            </svg>
             <a href="" class="header-a">+380961111111</a>
         </div>
-        <!-- <img src="img/point.png" alt="img" class="point"> -->
     </header>
     <main>
         <div class="filters">
@@ -109,17 +115,34 @@
             </div>
     </main>
     </div>
-    <footer>
-        <div class="footer-container">
-            <h3 class="WebStudio"><span class="blue" style="font-family: Raleway, sans-serif;">Web</span><span
-                    class="white">Studio</span>
-            </h3>
-            <address>
-                <p class="white">м. Київ, пр-т Лесі Українки, 26</p>
-            </address>
-            <a href="mailto:info@devstudio.com" class="white">info@devstudio.com</a>
-            <br>
-            <a href="tel:+380961111111" class="white">+380961111111</a>
+    <footer class="footer-container1">
+        <div class="footer">
+            <section class="footer-container">
+                <h3 class="WebStudio2 , text-decoration"><span class="blue"
+                    style="font-family: Raleway, sans-serif;">Web</span><span class="white">Studio</span>
+                </h3>
+                <address>
+                    <p class="white , text-decoration">м. Київ, пр-т Лесі Українки, 26</p>
+                </address>
+                <a href="mailto:info@devstudio.com" class="white , text-decoration">info@devstudio.com</a>
+                <br>
+                <a href="tel:+380961111111" class="white , text-decoration">+380961111111</a>
+            </section>
+            <section class="footer-section">
+                <h4>приєднуйтесь</h4>
+                <div class="footer-div">
+                    <svg class="icon-footer">
+                        <use width="20" height="20" y="10" x="10" href="symbol-defs.svg#icon-instagram"></use>
+                    </svg>
+                    <svg class="icon-footer">
+                        <use width="20" height="20" y="10" x="10" href="symbol-defs.svg#icon-twitter"></use>
+                    </svg><svg class="icon-footer">
+                        <use width="20" height="20" y="10" x="10" href="symbol-defs.svg#icon-facebook"></use>
+                    </svg><svg class="icon-footer">
+                        <use width="20" height="20" y="10" x="10" href="symbol-defs.svg#icon-linkedin"></use>
+                    </svg>
+                </div>
+            </section>
         </div>
     </footer>
 </body>
