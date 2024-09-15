@@ -284,6 +284,7 @@
     fill: #FFFFFF;
     border: none;
     transition: 0.7s ease;
+    cursor: pointer;
 }
 
 /* імя людей */
@@ -330,11 +331,17 @@
 
 /* footer */
 
+.footer-container1{
+    background-color: var(--darkgrey);
+}
+
 .footer {
     background-color: var(--darkgrey);
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
+    margin-right: 800px;
+    
 }
 
 .footer-container{
@@ -343,6 +350,7 @@
     flex-direction: column;
     margin-right: 70px;
     margin-top: 60px;
+    
 }
 
 .footer-section {
@@ -376,6 +384,7 @@
     fill: #FFFFFF;
     background-color: #2196F3;
     transition: 0.7s ease;
+    cursor: pointer;
 }
 
 h4 {
