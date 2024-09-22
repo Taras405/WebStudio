@@ -99,7 +99,7 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 110px;
+    padding: 200px;
 }
 
 /* ефективні рішення для вашого бізнесу */
@@ -157,9 +157,8 @@
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
-    margin-left: -30px;
+    margin-left: 20px;
     border-radius: 5px;
-
 }
 
 
@@ -167,7 +166,7 @@
 .advantages {
     font-weight: bold;
     font-size: 14px;
-    text-align: left;
+    text-align: start;
 }
 
 /* розпис вмінь,переваг */
@@ -175,6 +174,10 @@
 .section-2{
     display: flex;
     justify-content: center;
+}
+
+.my-text{
+    
 }
 
 .paragraf {
@@ -372,8 +375,26 @@
     height: 40px;
     border-radius: 100%;
     background: rgba(255, 255, 255, 0.1);
+    margin-right: 2px;
 }
 
+.icon-footer1{
+    fill: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    margin-right: -2px;
+}
+
+.icon-footer1:hover{
+    fill: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    margin-right: -2px;
+}
 .icon-footer:hover{
     border-radius: 100%;
     border: none;
