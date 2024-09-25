@@ -29,7 +29,7 @@
     margin: 0;
 }
 
-.header-nav{
+.header-nav {
     margin-left: 93px;
     margin-right: 318px;
 }
@@ -47,6 +47,19 @@
 .header-nav-link {
     text-decoration: none;
     color: var(--black);
+    position: relative;
+    padding-bottom: 23px; 
+}
+
+.underline:after{
+    content: '';
+    position: absolute;
+    height: 4px;
+    background-color: #2196F3;
+    left: 0;
+    bottom: 0;
+    border-radius: 4px;
+    width: 100%;
 }
 
 .header-a {
@@ -64,14 +77,14 @@
     transition: 0.2s ease;
 }
 
-.svg-head{
+.svg-head {
     width: 106px;
     height: 12px;
     fill: #AFB1B8;
     margin-left: -90px;
 }
 
-.svg-head:hover{
+.svg-head:hover {
     fill: #2196F3;
     cursor: pointer;
     transition: 0.2s ease;
@@ -126,6 +139,36 @@
     margin-top: 20px;
 }
 
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 400px;
+    min-height: 300px;
+    padding: 15px;
+    background-color: skyblue;
+    transform: translate(-50%, -50%);
+}
+
 .main-container {
     display: flex;
     margin-top: 94px;
@@ -171,14 +214,12 @@
 
 /* розпис вмінь,переваг */
 
-.section-2{
+.section-2 {
     display: flex;
     justify-content: center;
 }
 
-.my-text{
-    
-}
+.my-text {}
 
 .paragraf {
     font-size: 14px;
@@ -330,7 +371,7 @@
 
 /* footer */
 
-.footer-container1{
+.footer-container1 {
     background-color: var(--darkgrey);
 }
 
@@ -339,25 +380,24 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 800px;
-    
+    margin-left: 130px;
+    margin-left: -1px;
 }
 
-.footer-container{
+.footer-container {
     height: 252px;
     display: flex;
     flex-direction: column;
     margin-right: 70px;
     margin-top: 60px;
-    
+
 }
 
 .footer-section {
-    margin-top: 72px;
+    margin-top: -60px;
     display: flex;
     flex-direction: column;
     text-align: start;
-    gap: 15px;
 }
 
 .WebStudio2 {
@@ -369,7 +409,20 @@
     cursor: pointer;
 }
 
-.icon-footer{
+.footer-div {
+    margin-left: 10px;
+}
+
+.icon-footer {
+    fill: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    margin-right: 4px;
+}
+
+.icon-footer1 {
     fill: #FFFFFF;
     width: 40px;
     height: 40px;
@@ -378,30 +431,69 @@
     margin-right: 2px;
 }
 
-.icon-footer1{
-    fill: #FFFFFF;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    margin-right: -2px;
-}
-
-.icon-footer1:hover{
-    fill: #FFFFFF;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background: rgba(255, 255, 255, 0.1);
-    margin-right: -2px;
-}
-.icon-footer:hover{
+.icon-footer1:hover {
     border-radius: 100%;
     border: none;
     fill: #FFFFFF;
     background-color: #2196F3;
     transition: 0.7s ease;
     cursor: pointer;
+}
+
+.icon-footer:hover {
+    border-radius: 100%;
+    border: none;
+    fill: #FFFFFF;
+    background-color: #2196F3;
+    transition: 0.7s ease;
+    cursor: pointer;
+}
+
+.s-input {
+    margin-top: 72px;
+    margin-left: 93px;
+    margin-right: -10px;
+}
+
+.div-input {
+    display: flex;
+}
+
+.email {
+    width: 358px;
+    height: 50px;
+    background-color: #2F303A;
+    border: 1px solid #FFFFFF30;
+}
+
+input::placeholder {
+    padding-left: 16px;
+}
+
+.button-ul {
+    display: flex;
+    list-style: none;
+}
+
+.button-f {
+    width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 6%;
+    color: #FFFFFF;
+    background-color: #2196F3;
+    border: none;
+    text-align: start;
+    padding-left: 30px;
+    border-radius: 4px;
+    margin-top: -14px;
+    margin-left: -29px;
+}
+
+.icon-b {
+    margin-left: -65px;
 }
 
 h4 {
@@ -440,7 +532,7 @@ button {
 
 /* PORTFOLIO */
 
-.header-portfolio{
+.header-portfolio {
     border-bottom: 1px #ECECEC solid;
     margin-bottom: 94px;
     margin-top: 4px;
@@ -509,16 +601,67 @@ button {
     color: #757575;
 }
 
-.portfolio-h2{
+.portfolio-h2 {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-size: 18px;
     line-height: 36px;
 }
 
-.portfolio-p{
+.portfolio-p {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 30px;
+}
+
+.div-card-h {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.p-h {
+    margin: 63px 24px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 3%;
+}
+
+.div-card-h p::before {
+    color: white;
+}
+
+.img-div:hover .div-card-h {
+    opacity: 1;
+    background-color: #2196F390;
+    color: #FFFFFF;
+}
+
+.div-card-h p:hover {
+    color: white;
+}
+
+.img-div {
+    position: relative;
+}
+
+.image {
+    display: block;
+}
+
+.p-s-input {
+    margin-right: -10px;
+}
+
+.p-footer {
+    margin-left: -1px;
 }

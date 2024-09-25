@@ -23,7 +23,7 @@
         <h1 class="WebStudio"><span class="blue">Web</span>Studio</h1>
         <nav class="header-nav">
             <ul class="header-nav-list">
-                <li class="header-nav-item"><a href="index.html" class="header-nav-link active"
+                <li class="header-nav-item"><a href="index.html" class="header-nav-link active underline"
                         style="color: #2196F3;">Студія</a></li>
                 <li class="header-nav-item"><a href="portfolio.html" class="header-nav-link">Портфоліо</a></li>
                 <li class="header-nav-item"><a href="" class="header-nav-link">Контакти</a></li>
@@ -47,7 +47,15 @@
             <h2 class="advertisement">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br> ВАШОГО
                 БІЗНЕСУ
             </h2>
-            <button class="white" , id="button" width="216px" height="50px">Замовити послугу</button>
+            <button class="white btn-open" , id="button" width="216px" height="50px" data-open-modal>Замовити
+                послугу</a>
+                <div class="backdrop is-hidden">
+                    <div>
+                        <button class="btn" data-close-modal>Закрити</button>
+                        <p>uwu</p>
+                    </div>
+                </div>
+            </button>
         </section>
         <section class="section-2">
             <div class="main-container">
@@ -248,15 +256,20 @@
             </section>
             <section class="s-input">
                 <h4>Підпишіться на розсилку</h4>
-                <div>
+                <div class="div-input">
                     <label for="email"></label>
-                    <input type="email" placeholder="E-mail" class="input">
-                    <button>Підписатися</button>
+                    <input type="email" placeholder="E-mail" class="email">
+                    <ul class="button-ul">
+                        <li><button class="button-f">Підписатися</button></li>
+                        <svg class="icon-b">
+                            <use width="24" height="24" href="symbol-defs.svg#icon-send"></use>
+                        </svg>
+                    </ul>
                 </div>
-
             </section>
         </div>
     </footer>
+    <!-- <script src="./js/modal.js"></script> -->
 </body>
 
 </html>
