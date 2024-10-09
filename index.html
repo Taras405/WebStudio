@@ -47,15 +47,50 @@
             <h2 class="advertisement">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br> ВАШОГО
                 БІЗНЕСУ
             </h2>
-            <button class="white btn-open" , id="button" width="216px" height="50px" data-open-modal>Замовити
-                послугу</a>
-                <div class="backdrop is-hidden">
+            <button class="white" , id="button" width="216px" height="50px" data-modal-open>Замовити
+                послугу</button>
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal box-modal">
+                    <svg class="close-icon" data-modal-close>
+                        <use href="symbol-defs.svg#icon-croos"></use>
+                    </svg>
+                    <h3><strong>Залиште свої дані, ми вам передзвонимо</strong></h3>
+                    <label>Ім'я
+                        <br>
+                        <svg class="other-svg">
+                            <use href="symbol-defs.svg#icon-person"></use>
+                        </svg>
+                        <input type="name" class="name" required>
+                    </label>
+                    <br>
+                    <label>Телефон
+                        <br>
+                        <svg class="other-svg">
+                            <use href="symbol-defs.svg#icon-mobile"></use>
+                        </svg>
+                        <input type="tel" class="tel" required>
+                    </label>
+                    <br>
+                    <label>Пошта
+                        <br>
+                        <svg class="other-svg">
+                            <use href="symbol-defs.svg#icon-email"></use>
+                        </svg>
+                        <input type="email" class="email1" required>
+                    </label>
+                    <br>
+                    <label>Коментар
+                        <br>
+                        <textarea class="text-a-modal" placeholder="Введіть текст"></textarea>
+                    </label>
+                    <br>
                     <div>
-                        <button class="btn" data-close-modal>Закрити</button>
-                        <p>uwu</p>
+                        <input type="checkbox" id="agreement" required>
+                        <label for="agreement">Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a></label>
                     </div>
+                    <button class="button-m">Відправити</button>
                 </div>
-            </button>
+            </div>
         </section>
         <section class="section-2">
             <div class="main-container">
@@ -269,7 +304,7 @@
             </section>
         </div>
     </footer>
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./modal.js"></script>
 </body>
 
 </html>

@@ -149,6 +149,7 @@
     opacity: 1;
 }
 
+
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -162,11 +163,133 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    min-width: 400px;
-    min-height: 300px;
     padding: 15px;
-    background-color: skyblue;
+    background-color: #FFFFFF;
     transform: translate(-50%, -50%);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.box-modal {
+    width: 528px;
+    text-align: start;
+    padding-left: 40px;
+}
+
+.box-modal h3 {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 3%;
+    color: #212121;
+}
+
+.box-modal label {
+    width: 448px;
+    height: 58px;
+    color: #757575;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 1%;
+}
+
+.name, .tel, .email1, .text-a-modal{
+    width: 448px;
+    height: 40px;
+    margin-bottom: 10px;
+    border: 1px solid #21212120;
+    border-radius: 4px;
+    padding-left: 30px;
+}
+
+input:hover, input:active {
+    border: 1px solid #2196F3;
+}
+
+.other-svg:hover, input:focus ~ .other-svg {
+    fill: #2196F3;
+}
+
+.text-a-modal{
+    width: 448px;
+    height: 120px;
+    resize: none;
+    padding: 15px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    border: 1px solid #21212120;
+}
+
+
+.agreement input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+input[type="checkbox"]:checked {
+    accent-color: #2196F3;
+}
+
+.box-modal label {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.button-m {
+    width: 250px;
+    height: 50px;
+    padding: 10px 0;
+    background-color: #2196F3;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    margin-left: 110px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button-m:hover {
+    background-color: #188CE8;
+    transition: 0.5s ease;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.other-svg {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    margin-top: 15px;
+    fill: #000;
+}
+
+.other-svg:hover {
+    fill: #2196F3;
+}
+
+.close-icon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    fill: #000;
+    border: 1px solid #0000001A;
+    padding: 10px;
+    border-radius: 100%;
+} 
+
+.close-icon:hover {
+    fill: #2196F3;
+    border: 1px solid #0000001A;
+    transition: 0.2s ease;
 }
 
 .main-container {
@@ -218,8 +341,6 @@
     display: flex;
     justify-content: center;
 }
-
-.my-text {}
 
 .paragraf {
     font-size: 14px;
