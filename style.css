@@ -1,5 +1,4 @@
 :root {
-    --lightgrey: #212121;
     --grey: #757575;
     --white: #ffff;
     --blue: #2196F3;
@@ -7,7 +6,11 @@
     --darkgrey: #2F303A;
     --dirtywhite: #ECECEC;
     --creamwhite: #F5F4FA;
-    --active-color: #2196F3;
+    --blue: #2196F3;
+    --blue-hover: #188CE8;
+    --text-color: #212121;
+    --input-border: #21212120;
+    --shadow-color: rgba(0, 0, 0, 0.2);
 }
 
 /* header */
@@ -215,6 +218,17 @@
 
 .backdrop.is-closing .modal {
     animation: slideUp 0.4s forwards;
+}
+
+
+.backdrop.is-active .modal {
+    transform: translate(-50%, -50%);
+    animation: none;
+}
+
+.backdrop.is-closing {
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 .no-scroll {
