@@ -1,0 +1,22 @@
+* {
+    max-width: 100%;
+    list-style-type: none;
+    text-decoration: none;
+  }
+
+button,
+a {
+    cursor: pointer;
+}
+
+body,
+html {
+  scroll-behavior: smooth;
+//   height: 100%;
+//   width: 100%;
+  background: #FFFFFF;
+  font-family: 'Roboto', sans-serif;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
