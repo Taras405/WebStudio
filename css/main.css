@@ -35,4 +35,20 @@ html::-webkit-scrollbar {
   .container {
     width: 89.33vw;
   }
+}
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu {
+  display: none;
+}
+
+.contacts {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

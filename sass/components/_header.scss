@@ -1,1 +1,12 @@
-// ХЕДЕР
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    display: none;
+}
+
+.contacts {
+    display: none;
+}
