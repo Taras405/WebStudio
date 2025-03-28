@@ -1,6 +1,15 @@
 .header {
     display: flex;
     justify-content: space-between;
+    height: 60px;
+    align-items: center;
+}
+
+.heading {
+    @include text-style(700, 24px, 'Raleway', 0.3, #2196F3, left);
+    &__studio {
+        color: #212121;
+    }
 }
 
 .menu {
@@ -10,3 +19,9 @@
 .contacts {
     display: none;
 }
+
+.burger {
+    border: none;
+    background-color: white;
+}
+
