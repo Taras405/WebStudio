@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/icon.png">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css">
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>WebStudio</title>
@@ -32,11 +33,35 @@
                 +38 096 111 11 11
             </a>
         </nav>
-        <button class="open-menu menu-toggle js-open-menu burger" aria-expanded="false" aria-controls="mobile-menu">
-            <svg width="24" height="24">
+        <button class="open-menu menu-toggle js-open-menu openmenu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="openmenu__svg">
                 <use href="img/symbol-defs.svg#burger-menu"></use>
             </svg>
         </button>
+
+        <article class="burger js-menu-container" id="mobile-menu" role="dialog" aria-hidden="true">
+            <button class="closemenu menu-toggle js-close-menu" aria-label="Close menu">
+                <svg class="closemenu__svg">
+                    <use href="img/symbol-defs.svg#close"></use>
+                </svg>
+            </button>
+            <nav class="menuburger">
+                <a href="index.html" class="menuburger__link">Студія</a>
+                <a href="portfolio.html" class="menuburger__link">Портфоліо</a>
+                <a href="#" class="menuburger__link">Контакти</a>
+            </nav>
+            <nav class="tie">
+                <a href="tel:+380961111111" class="tie__contact">+38 096 111 11 11</a>
+                <a href="mailto:info@devstudio.com" class="tie__contact">info@devstudio.com</a>
+            </nav>
+            <nav class="stories">
+                <a href="https://www.instagram.com/" class="stories__social stories__social--line">Instagram</a>
+                <a href="https://x.com/" class="stories__social stories__social--line">Twitter</a>
+                <a href="https://uk-ua.facebook.com/" class="stories__social stories__social--line">Facebook</a>
+                <a href="https://www.linkedin.com/" class="stories__social">LinkedIn</a>
+            </nav>
+        </article>
+
     </header>
     <section class="container section-1">
         <h1 class="busines">Ефективні рішення для вашого бізнесу</h1>
@@ -281,6 +306,7 @@
             </aside>
         </aside>
     </footer>
+    <script src="js/menu.js" type="module"></script>
     <script src="js/modal.js" type="module"></script>
 </body>
 

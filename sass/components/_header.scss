@@ -7,6 +7,13 @@
 
 .heading {
     @include text-style(700, 24px, 'Raleway', 0.3, #2196F3, left);
+    transition: 250ms linear;
+
+    &:hover {
+        transition: 250ms linear;
+        margin-left: 5px;
+    }
+
     &__studio {
         color: #212121;
     }
@@ -20,8 +27,203 @@
     display: none;
 }
 
-.burger {
+.openmenu {
     border: none;
-    background-color: white;
+    background-color: #FFFFFF;
+    cursor: pointer;
+
+    &__svg {
+        width: 24px;
+        height: 24px;
+    }
 }
 
+.burger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #FFFFFF;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-100%);
+    transition: 300ms linear;
+
+    &.is-open {
+        transition: 300ms linear;
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+.closemenu {
+    display: block;
+    width: 12.5vw;
+    height: 5.556vh;
+    margin-left: auto;
+    margin-top: 3.125vw;
+    margin-right: 4.688vw;
+    border: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+
+    &__svg {
+        width: 7.5vw;
+        height: 7.5vh;
+    }
+}
+
+.menuburger {
+    display: flex;
+    flex-direction: column;
+    gap: 10.938vw;
+    margin-top: 2.5vw;
+    margin-left: 6.25vw;
+
+    &__link {
+        height: 48px;
+        @include text-style(500, 40px, 'Roboto', 1, #212121, left);
+        transition: 250ms linear;
+
+        &:hover {
+            transition: 250ms linear;
+            color: #2196F3;
+            margin-left: 5px;
+        }
+    }
+}
+
+.tie {
+    display: flex;
+    flex-direction: column;
+    gap: 10vw;
+    margin-top: 75.625vw;
+    margin-left: 6.25vw;
+
+    &__contact {
+        @include text-style(500, 24px, 'Roboto', 1, #757575, left);
+        transition: 250ms linear;
+
+        &:hover {
+            transition: 250ms linear;
+            color: #2196F3;
+            margin-left: 5px;
+        }
+    }
+}
+
+.stories {
+    display: flex;
+    margin-top: 20vw;
+    margin-left: 6.25vw;
+    gap: 3.125vw;
+
+    &__social {
+        @include text-style(500, 14px, 'Roboto', 1, #2196F3, left);
+        transition: 250ms linear;
+
+        &:hover {
+            transition: 250ms linear;
+            margin-top: -5px;
+            color: #2195f3b0;
+        }
+
+        &--line {
+            border-right: 1px solid #212121;
+            padding-right: 3.125vw;
+        }
+    }
+}
+
+@media (min-width: 375px) {
+    .tie {
+        margin-top: 54.533vw;
+    }
+}
+
+@media (min-width: 425px) {
+    .closemenu {
+        width: 9.412vw;
+        height: 9.412vw;
+        margin-top: 2.353vw;
+        margin-right: 3.529vw;
+    }
+
+    .menuburger {
+        gap: 8.235vw;
+        margin-top: 1.882vw;
+        margin-left: 9.412vw;
+
+        &__link {
+            height: 11.294vw;
+        }
+    }
+
+    .tie {
+        display: flex;
+        flex-direction: column;
+        gap: 10vw;
+        margin-top: 71.059vw;
+        margin-left: 9.412vw;
+
+        &__contact {
+            @include text-style(500, 24px, 'Roboto', 0.2, #757575, left);
+        }
+    }
+
+    .stories {
+        display: flex;
+        margin-top: 15.059vw;
+        margin-left: 9.412vw;
+        gap: 2.353vw;
+
+        &__social {
+            @include text-style(500, 18px, 'Roboto', 1, #2196F3, left);
+
+            &--line {
+                padding-right: 2.353vw;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        align-items: center;
+    }
+
+    .menu {
+        display: flex;
+        width: 281px;
+        gap: 52px;
+
+        &__links {
+            @include text-style(500, 14px, 'Roboto', 1, #212121, left);
+        }
+    }
+
+    .contacts {
+        display: block;
+        width: 136px;
+
+        &__link {
+            @include text-style(500, 14px, 'Roboto', 1, #212121, left);
+
+            &--svg {
+                fill: #212121;
+                background-color: #212121;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+
+    .openmenu {
+        display: none;
+    }
+}
