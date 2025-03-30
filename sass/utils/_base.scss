@@ -7,13 +7,12 @@
 button,
 a {
     cursor: pointer;
+    font-family: 'Roboto', sans-serif;
 }
 
 body,
 html {
   scroll-behavior: smooth;
-//   height: 100%;
-//   width: 100%;
   background: #FFFFFF;
   font-family: 'Roboto', sans-serif;
   &::-webkit-scrollbar {

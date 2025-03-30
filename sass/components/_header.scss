@@ -10,7 +10,7 @@
     transition: 250ms linear;
 
     &:hover {
-        margin-left: 5px;
+        margin-top: -5px;
         transition: 250ms linear;
     }
 
@@ -162,6 +162,7 @@
 
         &__links {
             @include text-style(500, 14px, 'Roboto', 1, #212121, none);
+            font-family: 'Roboto', sans-serif;
             position: relative;
             transition: color 250ms linear;
 
@@ -191,17 +192,20 @@
     .contacts {
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        column-gap: 30px;
+        row-gap: 10px;
+
 
         &__link {
-            @include text-style(500, 14px, 'Roboto', 1, #757575, left);
+            @include text-style(500, 14px, 'Roboto', 1.1, #757575, left);
             transition: 250ms linear;
 
             &--svg {
                 position: relative;
                 left: -8px;
-                width: 14px;
-                height: 10px;
+                top: 3px;
+                width: 15px;
+                height: 15px;
                 fill: var(--color1);
                 transition: 250ms linear;
             }
@@ -217,5 +221,30 @@
 
     .openmenu {
         display: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .contacts {
+        flex-direction: row;
+        gap: 30px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .heading {
+        @include text-style(700, 26px, 'Raleway', 1, #2196F3, left);
+    }
+
+    .menu {
+        gap: 53px;
+    }
+
+    .contacts {
+        &__link {
+            &--svg {
+                left: -10px;
+            }
+        }
     }
 }
