@@ -10,8 +10,8 @@
     transition: 250ms linear;
 
     &:hover {
-        transition: 250ms linear;
         margin-left: 5px;
+        transition: 250ms linear;
     }
 
     &__studio {
@@ -76,11 +76,11 @@
 }
 
 .menuburger {
-    display: flex;
     flex-direction: column;
-    gap: 10.938vw;
+    display: flex;
     margin-top: 2.5vw;
     margin-left: 6.25vw;
+    gap: 10.938vw;
 
     &__link {
         height: 48px;
@@ -88,35 +88,37 @@
         transition: 250ms linear;
 
         &:hover {
-            transition: 250ms linear;
-            color: #2196F3;
             margin-left: 5px;
+            color: #2196F3;
+            transition: 250ms linear;
         }
     }
 }
 
 .tie {
-    display: flex;
+    position: absolute;
+    bottom: 41.875vw;
     flex-direction: column;
-    gap: 10vw;
-    margin-top: 75.625vw;
+    display: flex;
     margin-left: 6.25vw;
+    gap: 10vw;
 
     &__contact {
         @include text-style(500, 24px, 'Roboto', 1, #757575, left);
         transition: 250ms linear;
 
         &:hover {
-            transition: 250ms linear;
-            color: #2196F3;
             margin-left: 5px;
+            color: #2196F3;
+            transition: 250ms linear;
         }
     }
 }
 
 .stories {
+    position: absolute;
+    bottom: 15vw;
     display: flex;
-    margin-top: 20vw;
     margin-left: 6.25vw;
     gap: 3.125vw;
 
@@ -125,21 +127,15 @@
         transition: 250ms linear;
 
         &:hover {
-            transition: 250ms linear;
             margin-top: -5px;
             color: #2195f3b0;
+            transition: 250ms linear;
         }
 
         &--line {
-            border-right: 1px solid #212121;
             padding-right: 3.125vw;
+            border-right: 1px solid #212121;
         }
-    }
-}
-
-@media (min-width: 375px) {
-    .tie {
-        margin-top: 54.533vw;
     }
 }
 

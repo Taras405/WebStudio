@@ -61,9 +61,9 @@ html::-webkit-scrollbar {
   transition: 250ms linear;
 }
 .heading:hover {
+  margin-left: 5px;
   -webkit-transition: 250ms linear;
   transition: 250ms linear;
-  margin-left: 5px;
 }
 .heading__studio {
   color: #212121;
@@ -127,16 +127,16 @@ html::-webkit-scrollbar {
 }
 
 .menuburger {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 10.938vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-top: 2.5vw;
   margin-left: 6.25vw;
+  gap: 10.938vw;
 }
 .menuburger__link {
   height: 48px;
@@ -151,23 +151,24 @@ html::-webkit-scrollbar {
   transition: 250ms linear;
 }
 .menuburger__link:hover {
+  margin-left: 5px;
+  color: #2196F3;
   -webkit-transition: 250ms linear;
   transition: 250ms linear;
-  color: #2196F3;
-  margin-left: 5px;
 }
 
 .tie {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  position: absolute;
+  bottom: 41.875vw;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 10vw;
-  margin-top: 75.625vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-left: 6.25vw;
+  gap: 10vw;
 }
 .tie__contact {
   font-weight: 500;
@@ -181,17 +182,18 @@ html::-webkit-scrollbar {
   transition: 250ms linear;
 }
 .tie__contact:hover {
+  margin-left: 5px;
+  color: #2196F3;
   -webkit-transition: 250ms linear;
   transition: 250ms linear;
-  color: #2196F3;
-  margin-left: 5px;
 }
 
 .stories {
+  position: absolute;
+  bottom: 15vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 20vw;
   margin-left: 6.25vw;
   gap: 3.125vw;
 }
@@ -207,21 +209,16 @@ html::-webkit-scrollbar {
   transition: 250ms linear;
 }
 .stories__social:hover {
-  -webkit-transition: 250ms linear;
-  transition: 250ms linear;
   margin-top: -5px;
   color: rgba(33, 149, 243, 0.6901960784);
+  -webkit-transition: 250ms linear;
+  transition: 250ms linear;
 }
 .stories__social--line {
-  border-right: 1px solid #212121;
   padding-right: 3.125vw;
+  border-right: 1px solid #212121;
 }
 
-@media (min-width: 375px) {
-  .tie {
-    margin-top: 54.533vw;
-  }
-}
 @media (min-width: 425px) {
   .closemenu {
     width: 9.412vw;
