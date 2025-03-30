@@ -36,6 +36,10 @@ html::-webkit-scrollbar {
     width: 89.33vw;
   }
 }
+:root {
+  --color1: #757575;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -51,7 +55,7 @@ html::-webkit-scrollbar {
 
 .heading {
   font-weight: 700;
-  font-size: 24px;
+  font-size: calc(24px + 1vw);
   font-family: "Raleway";
   line-height: 0.3;
   color: #2196F3;
@@ -141,7 +145,7 @@ html::-webkit-scrollbar {
 .menuburger__link {
   height: 48px;
   font-weight: 500;
-  font-size: 40px;
+  font-size: calc(40px + 1vw);
   font-family: "Roboto";
   line-height: 1;
   color: #212121;
@@ -172,7 +176,7 @@ html::-webkit-scrollbar {
 }
 .tie__contact {
   font-weight: 500;
-  font-size: 24px;
+  font-size: calc(24px + 1vw);
   font-family: "Roboto";
   line-height: 1;
   color: #757575;
@@ -220,49 +224,6 @@ html::-webkit-scrollbar {
 }
 
 @media (min-width: 425px) {
-  .closemenu {
-    width: 9.412vw;
-    height: 9.412vw;
-    margin-top: 2.353vw;
-    margin-right: 3.529vw;
-  }
-  .menuburger {
-    gap: 8.235vw;
-    margin-top: 1.882vw;
-    margin-left: 9.412vw;
-  }
-  .menuburger__link {
-    height: 11.294vw;
-  }
-  .tie {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 10vw;
-    margin-top: 71.059vw;
-    margin-left: 9.412vw;
-  }
-  .tie__contact {
-    font-weight: 500;
-    font-size: 24px;
-    font-family: "Roboto";
-    line-height: 0.2;
-    color: #757575;
-    text-align: left;
-    letter-spacing: 3%;
-  }
-  .stories {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 15.059vw;
-    margin-left: 9.412vw;
-    gap: 2.353vw;
-  }
   .stories__social {
     font-weight: 500;
     font-size: 18px;
@@ -272,28 +233,24 @@ html::-webkit-scrollbar {
     text-align: left;
     letter-spacing: 3%;
   }
-  .stories__social--line {
-    padding-right: 2.353vw;
-  }
 }
 @media (min-width: 768px) {
   .header {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     height: 80px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  }
+  .heading {
+    font-weight: 700;
+    font-size: 24px;
+    font-family: "Raleway";
+    line-height: 1;
+    color: #2196F3;
+    text-align: left;
+    letter-spacing: 3%;
   }
   .menu {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 281px;
     gap: 52px;
   }
   .menu__links {
@@ -302,27 +259,70 @@ html::-webkit-scrollbar {
     font-family: "Roboto";
     line-height: 1;
     color: #212121;
-    text-align: left;
+    text-align: none;
     letter-spacing: 3%;
+    position: relative;
+    -webkit-transition: color 250ms linear;
+    transition: color 250ms linear;
+  }
+  .menu__links:hover {
+    color: #2196F3;
+  }
+  .menu__links::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -32px;
+    width: 100%;
+    height: 4px;
+    background-color: #2196F3;
+    border-radius: 4px;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+    -webkit-transition: -webkit-transform 250ms linear;
+    transition: -webkit-transform 250ms linear;
+    transition: transform 250ms linear;
+    transition: transform 250ms linear, -webkit-transform 250ms linear;
+  }
+  .menu__links:hover::after {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
   }
   .contacts {
-    display: block;
-    width: 136px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
   }
   .contacts__link {
     font-weight: 500;
     font-size: 14px;
     font-family: "Roboto";
     line-height: 1;
-    color: #212121;
+    color: #757575;
     text-align: left;
     letter-spacing: 3%;
+    -webkit-transition: 250ms linear;
+    transition: 250ms linear;
   }
   .contacts__link--svg {
-    fill: #212121;
-    background-color: #212121;
-    width: 24px;
-    height: 24px;
+    position: relative;
+    left: -8px;
+    width: 14px;
+    height: 10px;
+    fill: var(--color1);
+    -webkit-transition: 250ms linear;
+    transition: 250ms linear;
+  }
+  .contacts__link--svg:hover, .contacts__link:hover {
+    color: #2196F3;
+    --color1: #2196F3;
+    -webkit-transition: 250ms linear;
+    transition: 250ms linear;
   }
   .openmenu {
     display: none;
