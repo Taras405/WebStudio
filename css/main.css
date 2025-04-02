@@ -39,6 +39,7 @@ html::-webkit-scrollbar {
 }
 :root {
   --color1: #757575;
+  --finger: #000000;
 }
 
 .header {
@@ -264,6 +265,17 @@ html::-webkit-scrollbar {
     letter-spacing: 3%;
     font-family: "Roboto", sans-serif;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    margin-bottom: -16px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-transition: color 250ms linear;
     transition: color 250ms linear;
   }
@@ -274,7 +286,7 @@ html::-webkit-scrollbar {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -32px;
+    bottom: -16px;
     width: 100%;
     height: 4px;
     background-color: #2196F3;
@@ -289,6 +301,23 @@ html::-webkit-scrollbar {
   .menu__links:hover::after {
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
+  }
+  .menu__links--finger {
+    width: 16px;
+    height: 16px;
+    opacity: 0;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    -webkit-transition: opacity 250ms linear, -webkit-transform 250ms linear;
+    transition: opacity 250ms linear, -webkit-transform 250ms linear;
+    transition: opacity 250ms linear, transform 250ms linear;
+    transition: opacity 250ms linear, transform 250ms linear, -webkit-transform 250ms linear;
+    pointer-events: none;
+  }
+  .menu__finger:hover .menu__links--finger {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   .contacts {
     display: -webkit-box;
@@ -329,6 +358,26 @@ html::-webkit-scrollbar {
     --color1: #2196F3;
     -webkit-transition: 250ms linear;
     transition: 250ms linear;
+  }
+  .contacts__link--finger {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    left: -62%;
+    bottom: -16px;
+    opacity: 0;
+    -webkit-transform: translateY(5px);
+            transform: translateY(5px);
+    -webkit-transition: opacity 250ms linear, -webkit-transform 250ms linear;
+    transition: opacity 250ms linear, -webkit-transform 250ms linear;
+    transition: opacity 250ms linear, transform 250ms linear;
+    transition: opacity 250ms linear, transform 250ms linear, -webkit-transform 250ms linear;
+    pointer-events: none;
+  }
+  .contacts__finger:hover .contacts__link--finger {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
   .openmenu {
     display: none;

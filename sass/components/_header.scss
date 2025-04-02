@@ -164,6 +164,10 @@
             @include text-style(500, 14px, 'Roboto', 1, #212121, none);
             font-family: 'Roboto', sans-serif;
             position: relative;
+            display: flex;
+            align-items: end;
+            margin-bottom: -16px;
+            flex-direction: column;
             transition: color 250ms linear;
 
             &:hover {
@@ -174,7 +178,7 @@
                 content: '';
                 position: absolute;
                 left: 0;
-                bottom: -32px;
+                bottom: -16px;
                 width: 100%;
                 height: 4px;
                 background-color: #2196F3;
@@ -185,6 +189,21 @@
 
             &:hover::after {
                 transform: scaleY(1);
+            }
+
+            &--finger {
+                width: 16px;
+                height: 16px;
+                // fill: var(--finger);
+                opacity: 0;
+                transform: translateY(5px);
+                transition: opacity 250ms linear, transform 250ms linear;
+                pointer-events: none;
+            }
+
+            .menu__finger:hover &--finger {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
     }
@@ -215,6 +234,24 @@
                 color: #2196F3;
                 --color1: #2196F3;
                 transition: 250ms linear;
+            }
+
+            &--finger {
+                width: 16px;
+                height: 16px;
+                // fill: var(--finger);
+                position: relative;
+                left: -62%;
+                bottom: -16px;
+                opacity: 0;
+                transform: translateY(5px);
+                transition: opacity 250ms linear, transform 250ms linear;
+                pointer-events: none;
+            }
+
+            .contacts__finger:hover &--finger {
+                opacity: 1;
+                transform: translateY(0);
             }
         }
     }
