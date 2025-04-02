@@ -39,7 +39,6 @@ html::-webkit-scrollbar {
 }
 :root {
   --color1: #757575;
-  --finger: #000000;
 }
 
 .header {
@@ -372,7 +371,6 @@ html::-webkit-scrollbar {
     transition: opacity 250ms linear, -webkit-transform 250ms linear;
     transition: opacity 250ms linear, transform 250ms linear;
     transition: opacity 250ms linear, transform 250ms linear, -webkit-transform 250ms linear;
-    pointer-events: none;
   }
   .contacts__finger:hover .contacts__link--finger {
     opacity: 1;

@@ -194,7 +194,6 @@
             &--finger {
                 width: 16px;
                 height: 16px;
-                // fill: var(--finger);
                 opacity: 0;
                 transform: translateY(5px);
                 transition: opacity 250ms linear, transform 250ms linear;
@@ -236,17 +235,16 @@
                 transition: 250ms linear;
             }
 
+
             &--finger {
                 width: 16px;
                 height: 16px;
-                // fill: var(--finger);
                 position: relative;
                 left: -62%;
                 bottom: -16px;
                 opacity: 0;
                 transform: translateY(5px);
                 transition: opacity 250ms linear, transform 250ms linear;
-                pointer-events: none;
             }
 
             .contacts__finger:hover &--finger {
