@@ -83,7 +83,50 @@
     </header>
     <section class="container section1">
         <h1 class="busines">Ефективні рішення для вашого бізнесу</h1>
-        <button class="order">Замовити послугу</button>
+        <button class="order" data-modal-open>Замовити послугу</button>
+        <aside class="backdrop is_hidden" data-modal>
+            <article class="modal">
+                <svg class="modal__close" data-modal-close>
+                    <use href="img/symbol-defs.svg#close"></use>
+                </svg>
+                <h2 class="modal__feedback">Залиште свої дані, ми вам передзвонимо</h2>
+                <label>
+                    Ім'я
+                    <!-- <br> -->
+                    <input type="name" class="modal__input" required>
+                    <svg class="modal__svg">
+                        <use href="img/symbol-defs.svg#"></use>
+                    </svg>
+                </label>
+                <label>
+                    Телефон
+                    <!-- <br> -->
+                    <input type="tel" class="modal__input" required>
+                    <svg class="modal__svg">
+                        <use href="img/symbol-defs.svg#"></use>
+                    </svg>
+                </label>
+                <label>
+                    Пошта
+                    <!-- <br> -->
+                    <input type="email" class="modal__input" required>
+                    <svg class="modal__svg">
+                        <use href="img/symbol-defs.svg#"></use>
+                    </svg>
+                </label>
+                <label>Коментар
+                    <!-- <br> -->
+                    <textarea class="modal__textarea" placeholder="Введіть текст"></textarea>
+                </label>
+                <label>
+                    <input type="checkbox" class="modal__agree" required>
+                    Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+                </label>
+                <button class="modal__send">
+                    Відправити
+                </button>
+            </article>
+        </aside>
     </section>
     <section class="container section2">
         <article class="advantage">
