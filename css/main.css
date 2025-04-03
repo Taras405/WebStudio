@@ -476,7 +476,8 @@ html::-webkit-scrollbar {
   }
 }
 .section1 {
-  min-height: 480px;
+  height: 480px;
+  max-width: 100%;
   width: 100%;
   justify-items: center;
   -ms-flex-line-pack: center;
@@ -525,6 +526,13 @@ html::-webkit-scrollbar {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  -webkit-transition: 250ms linear;
+  transition: 250ms linear;
+}
+.order:hover {
+  -webkit-transition: 250ms linear;
+  transition: 250ms linear;
+  background-color: #1e84d8;
 }
 
 @media (min-width: 425px) {
@@ -534,7 +542,9 @@ html::-webkit-scrollbar {
 }
 @media (min-width: 768px) {
   .section1 {
+    height: 600px;
     width: 100%;
+    background-position: top;
   }
   .busines {
     width: 422px;
