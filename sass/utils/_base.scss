@@ -1,13 +1,7 @@
 * {
-    max-width: 100%;
-    list-style-type: none;
-    text-decoration: none;
-  }
-
-button,
-a {
-    cursor: pointer;
-    font-family: 'Roboto', sans-serif;
+  max-width: 100%;
+  list-style-type: none;
+  text-decoration: none;
 }
 
 body,
@@ -15,7 +9,19 @@ html {
   scroll-behavior: smooth;
   background: #FFFFFF;
   font-family: 'Roboto', sans-serif;
+
   &::-webkit-scrollbar {
     display: none;
   }
+}
+
+button,
+a {
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+button {
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
