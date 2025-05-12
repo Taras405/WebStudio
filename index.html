@@ -89,10 +89,12 @@
                 <svg class="modal__close" data-modal-close>
                     <use href="img/symbol-defs.svg#close"></use>
                 </svg>
+                <!-- <svg class="modal__finger icon-hidden" id="hint-icon">
+                    <use href="img/symbol-defs.svg#finger"></use>
+                </svg> -->
                 <h2 class="modal__head">Залиште свої дані, ми вам передзвонимо</h2>
                 <label class="data">
                     Ім'я
-                    <!-- <br> -->
                     <input type="name" class="data__input" required>
                     <svg class="data__svg">
                         <use href="img/symbol-defs.svg#name"></use>
@@ -100,7 +102,6 @@
                 </label>
                 <label class="data">
                     Телефон
-                    <!-- <br> -->
                     <input type="tel" class="data__input" required>
                     <svg class="data__svg">
                         <use href="img/symbol-defs.svg#tel"></use>
@@ -108,7 +109,6 @@
                 </label>
                 <label class="data">
                     Пошта
-                    <!-- <br> -->
                     <input type="email" class="data__input" required>
                     <svg class="data__svg">
                         <use href="img/symbol-defs.svg#modal-email"></use>
@@ -116,14 +116,13 @@
                 </label>
                 <label class="data">
                     Коментар
-                    <!-- <br> -->
                     <textarea class="data__textarea" placeholder="Введіть текст"></textarea>
                 </label>
-                <label class="data">
+                <label class="checkbox">
                     <input type="checkbox" class="data__agree" required>
-                    Погоджуюся з розсилкою та приймаю <a href="">Умови договору</a>
+                    Погоджуюся з розсилкою та приймаю <a href="" class="checkbox__link">Умови договору</a>
                 </label>
-                <button class="modal__send">
+                <button class="sendmodal">
                     Відправити
                 </button>
             </article>
@@ -368,6 +367,7 @@
             </aside>
         </aside>
     </footer>
+    <script src="js/trigger.js" type="module"></script>
     <script src="js/menu.js" type="module"></script>
     <script src="js/modal.js" type="module"></script>
 </body>
