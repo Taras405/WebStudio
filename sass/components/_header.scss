@@ -29,9 +29,10 @@
 }
 
 .openmenu {
-    border: none;
     background-color: #FFFFFF;
+    border: none;
     cursor: pointer;
+    box-shadow: none;
 
     &__svg {
         width: 24px;
@@ -66,9 +67,10 @@
     margin-left: auto;
     margin-top: 3.125vw;
     margin-right: 4.688vw;
-    border: none;
     background-color: #FFFFFF;
+    border: none;
     cursor: pointer;
+    box-shadow: none;
 
     &__svg {
         width: 7.5vw;
