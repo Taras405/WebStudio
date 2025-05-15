@@ -1,0 +1,12 @@
+.section2 {
+    display: block;
+    // gap: 30px;
+}
+
+.advantage {
+    &__icon {
+        width: 450px;
+        height: 120px;
+        background-color: #F5F4FA;
+    }
+}
