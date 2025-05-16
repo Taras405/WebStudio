@@ -1,10 +1,9 @@
 .section2 {
     display: block;
-    // gap: 30px;
+    margin-top: 60px;
 }
 
 .advantage {
-
     &__block {
         display: flex;
         align-items: center;
@@ -18,7 +17,49 @@
             height: 70px;
         }
     }
+
     &__heading {
+        margin-top: 30px;
         text-align: center;
+        @include text-style(700, 14px, 'Roboto', 100%, #212121, center);
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 0.3px
+    }
+
+    &__description {
+        @include text-style(400, 14px, 'Roboto', 24px, #757575, left);
+        font-family: 'Roboto', sans-serif;
+    }
+}
+
+@media (min-width: 768px) {
+    .section2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+
+    .advantage {
+        width: 354px;
+
+        &__heading {
+            text-align: left
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .section2 {
+        margin-top: 94px;
+    }
+
+    .advantage {
+        width: 270px;
+        height: 248px;
+
+        &__heading {
+            text-align: left;
+        }
     }
 }

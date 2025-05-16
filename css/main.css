@@ -697,6 +697,7 @@ input[type=checkbox]:checked {
 }
 .section2 {
   display: block;
+  margin-top: 60px;
 }
 
 .advantage__block {
@@ -718,5 +719,57 @@ input[type=checkbox]:checked {
   height: 70px;
 }
 .advantage__heading {
+  margin-top: 30px;
   text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Roboto";
+  line-height: 100%;
+  color: #212121;
+  text-align: center;
+  letter-spacing: 3%;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.3px;
+}
+.advantage__description {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Roboto";
+  line-height: 24px;
+  color: #757575;
+  text-align: left;
+  letter-spacing: 3%;
+  font-family: "Roboto", sans-serif;
+}
+
+@media (min-width: 768px) {
+  .section2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+  .advantage {
+    width: 354px;
+  }
+  .advantage__heading {
+    text-align: left;
+  }
+}
+@media (min-width: 1024px) {
+  .section2 {
+    margin-top: 94px;
+  }
+  .advantage {
+    width: 270px;
+    height: 248px;
+  }
+  .advantage__heading {
+    text-align: left;
+  }
 }/*# sourceMappingURL=main.css.map */
