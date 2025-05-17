@@ -850,6 +850,7 @@ input[type=checkbox]:checked {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0;
+  padding-bottom: 60px;
 }
 
 .card {
@@ -906,19 +907,18 @@ input[type=checkbox]:checked {
 .card__svgbox--svg {
   width: 44px;
   height: 44px;
-  padding: 12px;
   fill: #AFB1B8;
-  cursor: pointer;
+  border-radius: 50%;
+  border: none;
   -webkit-transition: 250ms linear;
   transition: 250ms linear;
-  border: none;
+  cursor: pointer;
 }
 .card__svgbox--svg:hover, .card__svgbox--svg:active {
+  fill: #FFFFFF;
+  background-color: #2196F3;
   -webkit-transition: 250ms linear;
   transition: 250ms linear;
-  fill: #FFFFFF;
-  border-radius: 20px;
-  background-color: #2196F3;
 }
 
 @media (min-width: 768px) {
@@ -951,6 +951,9 @@ input[type=checkbox]:checked {
 @media (min-width: 1024px) {
   .section4 {
     margin-top: 94px;
+  }
+  .cardbox {
+    padding-bottom: 94px;
   }
   .card__picture img {
     width: 270px;

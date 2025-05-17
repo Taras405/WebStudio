@@ -8,6 +8,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 0;
+    padding-bottom: 60px;
 }
 
 .card {
@@ -50,18 +51,17 @@
         &--svg {
             width: 44px;
             height: 44px;
-            padding: 12px;
             fill: #AFB1B8;
-            cursor: pointer;
-            transition: 250ms linear;
+            border-radius: 50%;
             border: none;
+            transition: 250ms linear;
+            cursor: pointer;
 
             &:hover,
             &:active {
-                transition: 250ms linear;
                 fill: #FFFFFF;
-                border-radius: 20px;
                 background-color: #2196F3;
+                transition: 250ms linear;
             }
         }
     }
@@ -78,7 +78,6 @@
         flex-wrap: wrap;
         justify-content: none;
         gap: 30px;
-
     }
 
     .card {
@@ -100,8 +99,11 @@
         margin-top: 94px;
     }
 
-    .card {
+    .cardbox {
+        padding-bottom: 94px;
+    }
 
+    .card {
         &__picture {
             img {
                 width: 270px;
