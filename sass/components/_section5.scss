@@ -1,0 +1,41 @@
+.client {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 60px;
+    gap: 30px;
+
+    &__logo {
+        width: 210px;
+        height: 92px;
+        fill: #AFB1B8;
+        border: 1px solid #AFB1B8;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: 250ms linear;
+
+        &:hover,
+        &:active {
+            border-color: #2196F3;
+            fill: #2196F3;
+            transition: 250ms linear;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .client {
+        &__logo {
+            width: 226px;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .client {
+        margin-bottom: 94px;
+        &__logo {
+            width: 170px;
+        }
+    }
+}

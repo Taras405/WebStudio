@@ -1,1 +1,85 @@
-// хедер
+.footer {
+    background-color: #2F303A;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding: 30px 0;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+
+    &__heading {
+        @include text-style(700, 24px, 'Raleway', 100%, #2196F3, center);
+        font-family: 'Raleway', sans-serif;
+        letter-spacing: 0.3px;
+        transition: 250ms linear;
+
+        &:hover {
+            margin-top: -5px;
+            transition: 250ms linear;
+        }
+
+        &--studio {
+            color: #FFFFFF;
+        }
+    }
+
+    &__location,
+    &__email,
+    &__tel {
+        margin: 0;
+        margin-top: 8px;
+        @include text-style(400, 14px, 'Roboto', 24px, #FFFFFF, center);
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 0.3px;
+    }
+
+    &__email,
+    &__tel {
+        color: #FFFFFF99;
+        cursor: pointer;
+        transition: 250ms linear;
+
+        &:hover,
+        &:active {
+            transition: 250ms linear;
+            color: #2196F3;
+
+        }
+    }
+}
+
+.story {
+    &__head {
+        margin-bottom: 20px;
+        @include text-style(700, 14px, 'Roboto', 100%, #FFFFFF, center);
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: 0.3px;
+    }
+}
+
+.storys {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    &__svg {
+        display: flex;
+        width: 44px;
+        height: 44px;
+        fill: #FFFFFF;
+        background-color: #FFFFFF10;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: 250ms linear;
+
+        &:hover,
+        &:active {
+            transition: 250ms linear;
+            background-color: #2196F3;
+        }
+    }
+}
