@@ -30,6 +30,7 @@ button {
 .container {
   max-width: 1170px;
   margin: 0 auto;
+  outline: 1px solid red;
 }
 
 @media screen and (min-width: 320px) {
@@ -122,11 +123,11 @@ button {
   margin-bottom: 12px;
   font-weight: 700;
   font-size: 20px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   line-height: 1.3;
   color: #212121;
   text-align: center;
-  letter-spacing: 3%;
+  letter-spacing: 0.3px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -148,11 +149,11 @@ button {
   gap: 4px;
   font-weight: 400;
   font-size: 12px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   line-height: 1;
   color: #757575;
   text-align: left;
-  letter-spacing: 3%;
+  letter-spacing: 0.3px;
   font-family: "Roboto", sans-serif;
 }
 .data__input {
@@ -200,11 +201,11 @@ button {
   gap: 4px;
   font-weight: 400;
   font-size: 12px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   line-height: 1;
   color: #757575;
   text-align: left;
-  letter-spacing: 3%;
+  letter-spacing: 0.3px;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.3px;
 }
@@ -264,11 +265,11 @@ input[type=checkbox]:checked {
 .heading {
   font-weight: 700;
   font-size: 24px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   line-height: 0.3;
   color: #2196F3;
   text-align: left;
-  letter-spacing: 3%;
+  letter-spacing: 0.3px;
   font-family: "Raleway", sans-serif;
 }
 .heading__studio {
@@ -344,7 +345,6 @@ input[type=checkbox]:checked {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 2.5vw;
   margin-left: 6.25vw;
   gap: 10.938vw;
 }
@@ -352,11 +352,11 @@ input[type=checkbox]:checked {
   height: 48px;
   font-weight: 500;
   font-size: 40px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   line-height: 100%;
   color: #212121;
   text-align: left;
-  letter-spacing: 3%;
+  letter-spacing: 0.3px;
   font-family: "Roboto", sans-serif;
   -webkit-transition: 250ms linear;
   transition: 250ms linear;
@@ -384,11 +384,11 @@ input[type=checkbox]:checked {
 .tie__contact {
   font-weight: 500;
   font-size: 24px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   line-height: 100%;
   color: #757575;
   text-align: left;
-  letter-spacing: 3%;
+  letter-spacing: 0.3px;
   font-family: "Roboto", sans-serif;
   -webkit-transition: 250ms linear;
   transition: 250ms linear;
@@ -412,11 +412,11 @@ input[type=checkbox]:checked {
 .stories__social {
   font-weight: 500;
   font-size: 14px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   line-height: 1;
   color: #2196F3;
   text-align: left;
-  letter-spacing: 3%;
+  letter-spacing: 0.3px;
   -webkit-transition: 250ms linear;
   transition: 250ms linear;
 }
@@ -443,11 +443,11 @@ input[type=checkbox]:checked {
   .stories__social {
     font-weight: 500;
     font-size: 18px;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     line-height: 1;
     color: #2196F3;
     text-align: left;
-    letter-spacing: 3%;
+    letter-spacing: 0.3px;
   }
 }
 @media (min-width: 768px) {
@@ -457,11 +457,11 @@ input[type=checkbox]:checked {
   .heading {
     font-weight: 700;
     font-size: 24px;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     line-height: 1;
     color: #2196F3;
     text-align: left;
-    letter-spacing: 3%;
+    letter-spacing: 0.3px;
   }
   .menu {
     display: -webkit-box;
@@ -484,11 +484,11 @@ input[type=checkbox]:checked {
     margin-bottom: -16px;
     font-weight: 500;
     font-size: 14px;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     line-height: 100%;
     color: #212121;
     text-align: none;
-    letter-spacing: 3%;
+    letter-spacing: 0.3px;
     font-family: "Roboto", sans-serif;
     -webkit-transition: 250ms linear;
     transition: 250ms linear;
@@ -551,11 +551,11 @@ input[type=checkbox]:checked {
   .contacts__link {
     font-weight: 500;
     font-size: 14px;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     line-height: 1.1;
     color: #757575;
     text-align: left;
-    letter-spacing: 3%;
+    letter-spacing: 0.3px;
     -webkit-transition: 250ms linear;
     transition: 250ms linear;
   }
@@ -611,11 +611,11 @@ input[type=checkbox]:checked {
   .heading {
     font-weight: 700;
     font-size: 26px;
-    font-family: "Raleway";
+    font-family: "Raleway", sans-serif;
     line-height: 100%;
     color: #2196F3;
     text-align: left;
-    letter-spacing: 3%;
+    letter-spacing: 0.3px;
   }
   .menu {
     gap: 53px;
@@ -651,11 +651,11 @@ input[type=checkbox]:checked {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 24px;
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   line-height: 100%;
   color: #2196F3;
   text-align: center;
-  letter-spacing: 3%;
+  letter-spacing: 0.3px;
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.3px;
   cursor: pointer;
@@ -668,11 +668,11 @@ input[type=checkbox]:checked {
   margin-top: 8px;
   font-weight: 400;
   font-size: 14px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   line-height: 24px;
   color: #FFFFFF;
   text-align: center;
-  letter-spacing: 3%;
+  letter-spacing: 0.3px;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.3px;
 }
@@ -692,11 +692,11 @@ input[type=checkbox]:checked {
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   line-height: 100%;
   color: #FFFFFF;
   text-align: center;
-  letter-spacing: 3%;
+  letter-spacing: 0.3px;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.3px;
@@ -743,11 +743,11 @@ input[type=checkbox]:checked {
 .subscribe__newsletter {
   font-weight: 700;
   font-size: 14px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   line-height: 100%;
   color: #FFFFFF;
   text-align: center;
-  letter-spacing: 3%;
+  letter-spacing: 0.3px;
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.3px;
@@ -794,11 +794,11 @@ input[type=checkbox]:checked {
   background-color: #2196F3;
   font-weight: 700;
   font-size: 16px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   line-height: 100%;
   color: #FFFFFF;
   text-align: center;
-  letter-spacing: 3%;
+  letter-spacing: 0.3px;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.6px;
   -webkit-transition: 250ms linear;
@@ -893,11 +893,11 @@ input[type=checkbox]:checked {
   text-align: center;
   font-weight: 900;
   font-size: 26px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   line-height: 1.5;
   color: #FFFFFF;
   text-align: center;
-  letter-spacing: 3%;
+  letter-spacing: 0.3px;
   font-family: "Roboto", sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -908,11 +908,11 @@ input[type=checkbox]:checked {
   height: 50px;
   font-weight: 700;
   font-size: 16px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   line-height: 0.42;
   color: #FFFFFF;
   text-align: center;
-  letter-spacing: 3%;
+  letter-spacing: 0.3px;
   font-family: "Roboto", sans-serif;
   color: #FFFFFF;
   background-color: #2196F3;
@@ -971,22 +971,22 @@ input[type=checkbox]:checked {
   text-align: center;
   font-weight: 700;
   font-size: 14px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   line-height: 100%;
   color: #212121;
   text-align: center;
-  letter-spacing: 3%;
+  letter-spacing: 0.3px;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.3px;
 }
 .advantage__description {
   font-weight: 400;
   font-size: 14px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   line-height: 24px;
   color: #757575;
   text-align: left;
-  letter-spacing: 3%;
+  letter-spacing: 0.3px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -1031,11 +1031,11 @@ input[type=checkbox]:checked {
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 36px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   line-height: 100%;
   color: #212121;
   text-align: center;
-  letter-spacing: 3%;
+  letter-spacing: 0.3px;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.3px;
 }
@@ -1132,11 +1132,11 @@ input[type=checkbox]:checked {
   margin-top: 30px;
   font-weight: 500;
   font-size: 16px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   line-height: 100%;
   color: #212121;
   text-align: center;
-  letter-spacing: 3%;
+  letter-spacing: 0.3px;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.3px;
 }
@@ -1144,11 +1144,11 @@ input[type=checkbox]:checked {
   margin-top: 10px;
   font-weight: 400;
   font-size: 16px;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   line-height: 100%;
   color: #757575;
   text-align: center;
-  letter-spacing: 3%;
+  letter-spacing: 0.3px;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.3px;
 }
@@ -1222,11 +1222,11 @@ input[type=checkbox]:checked {
     margin-top: 30px;
     font-weight: 500;
     font-size: 16px;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     line-height: 100%;
     color: #212121;
     text-align: center;
-    letter-spacing: 3%;
+    letter-spacing: 0.3px;
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.3px;
   }
@@ -1234,11 +1234,11 @@ input[type=checkbox]:checked {
     margin-top: 10px;
     font-weight: 400;
     font-size: 16px;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     line-height: 100%;
     color: #757575;
     text-align: center;
-    letter-spacing: 3%;
+    letter-spacing: 0.3px;
     font-family: "Roboto", sans-serif;
     letter-spacing: 0.3px;
   }
@@ -1286,4 +1286,33 @@ input[type=checkbox]:checked {
   .client__logo {
     width: 170px;
   }
+}
+.filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  gap: 8px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+.filter__button {
+  height: 38px;
+  padding: 0 22px;
+  border: none;
+  border-radius: 4px;
+  color: #212121;
+  background-color: #F5F4FA;
+  -webkit-transition: 250ms linear;
+  transition: 250ms linear;
+}
+.filter__button:hover, .filter__button:active {
+  color: #FFFFFF;
+  background-color: #2196F3;
+  -webkit-transition: 250ms linear;
+  transition: 250ms linear;
 }/*# sourceMappingURL=main.css.map */

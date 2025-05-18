@@ -1,0 +1,25 @@
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 8px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+    &__button {
+        height: 38px;
+        padding: 0 22px;
+        border: none;
+        border-radius: 4px;
+        color: #212121;
+        background-color: #F5F4FA;
+        transition: 250ms linear;
+
+        &:hover,
+        &:active {
+            color: #FFFFFF;
+            background-color: #2196F3;
+            transition: 250ms linear;
+        }
+    }
+}
