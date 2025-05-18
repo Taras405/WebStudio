@@ -652,13 +652,7 @@ input[type=checkbox]:checked {
   letter-spacing: 3%;
   font-family: "Raleway", sans-serif;
   letter-spacing: 0.3px;
-  -webkit-transition: 250ms linear;
-  transition: 250ms linear;
-}
-.contact__heading:hover {
-  margin-top: -5px;
-  -webkit-transition: 250ms linear;
-  transition: 250ms linear;
+  cursor: pointer;
 }
 .contact__heading--studio {
   color: #FFFFFF;
@@ -730,6 +724,144 @@ input[type=checkbox]:checked {
   background-color: #2196F3;
 }
 
+.subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.subscribe__newsletter {
+  font-weight: 700;
+  font-size: 14px;
+  font-family: "Roboto";
+  line-height: 100%;
+  color: #FFFFFF;
+  text-align: center;
+  letter-spacing: 3%;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.3px;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+.button__input {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1882352941);
+  background-color: #2F303A;
+  color: #FFFFFF;
+}
+.button__input:focus {
+  background-color: #2F303A;
+  color: #FFFFFF;
+}
+.button__send {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 4px;
+  background-color: #2196F3;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Roboto";
+  line-height: 100%;
+  color: #FFFFFF;
+  text-align: center;
+  letter-spacing: 3%;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.6px;
+  -webkit-transition: 250ms linear;
+  transition: 250ms linear;
+}
+.button__send:hover, .button__send:active {
+  -webkit-transition: 250ms linear;
+  transition: 250ms linear;
+  background-color: #188CE8;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.button__send--svg {
+  width: 24px;
+  height: 24px;
+  margin-left: 12px;
+  fill: #FFFFFF;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .button__input {
+    width: 450px;
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .contact__heading {
+    text-align: left;
+  }
+  .contact__location, .contact__email, .contact__tel {
+    text-align: left;
+  }
+  .story__head {
+    text-align: left;
+  }
+  .subscribe__newsletter {
+    text-align: left;
+    margin-left: 20px;
+  }
+  .button {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .button__input {
+    width: 358px;
+  }
+}
 .section1 {
   height: 480px;
   max-width: 100%;
