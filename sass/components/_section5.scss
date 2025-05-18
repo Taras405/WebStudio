@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 60px;
+    padding-bottom: 60px;
     gap: 30px;
 
     &__logo {
@@ -16,6 +16,7 @@
 
         &:hover,
         &:active {
+            transform: scale(1.05);
             border-color: #2196F3;
             fill: #2196F3;
             transition: 250ms linear;
@@ -33,7 +34,8 @@
 
 @media (min-width: 1024px) {
     .client {
-        margin-bottom: 94px;
+        padding-bottom: 94px;
+
         &__logo {
             width: 170px;
         }

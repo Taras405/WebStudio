@@ -3,11 +3,20 @@
     background-color: #F5F4FA;
 }
 
+.indent {
+    padding-top: 60px;
+
+    @media (min-width: 1024px) {
+        padding-top: 94px;
+    }
+}
+
 .cardbox {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0;
+    margin: 0;
     padding-bottom: 60px;
 }
 

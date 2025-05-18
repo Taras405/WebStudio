@@ -6,14 +6,8 @@
 }
 
 .heading {
-    @include text-style(700, calc(24px + 1vw), 'Raleway', 0.3, #2196F3, left);
+    @include text-style(700, 24px, 'Raleway', 0.3, #2196F3, left);
     font-family: 'Raleway', sans-serif;
-    transition: 250ms linear;
-
-    &:hover {
-        margin-top: -5px;
-        transition: 250ms linear;
-    }
 
     &__studio {
         color: #212121;
@@ -87,7 +81,8 @@
 
     &__link {
         height: 48px;
-        @include text-style(500, calc(40px + 1vw), 'Roboto', 1, #212121, left);
+        @include text-style(500, 40px, 'Roboto', 100%, #212121, left);
+        font-family: 'Roboto', sans-serif;
         transition: 250ms linear;
 
         &:hover {
@@ -107,7 +102,8 @@
     gap: 10vw;
 
     &__contact {
-        @include text-style(500, calc(24px + 1vw), 'Roboto', 1, #757575, left);
+        @include text-style(500, 24px, 'Roboto', 100%, #757575, left);
+        font-family: 'Roboto', sans-serif;
         transition: 250ms linear;
 
         &:hover {
@@ -164,16 +160,17 @@
         gap: 52px;
 
         &__links {
-            @include text-style(500, 14px, 'Roboto', 1, #212121, none);
-            font-family: 'Roboto', sans-serif;
             position: relative;
             display: flex;
+            flex-direction: column;
             align-items: end;
             margin-bottom: -16px;
-            flex-direction: column;
-            transition: color 250ms linear;
+            @include text-style(500, 14px, 'Roboto', 100%, #212121, none);
+            font-family: 'Roboto', sans-serif;
+            transition: 250ms linear;
 
             &:hover {
+                transition: 250ms linear;
                 color: #2196F3;
             }
 
@@ -271,7 +268,7 @@
 
 @media (min-width: 1920px) {
     .heading {
-        @include text-style(700, 26px, 'Raleway', 1, #2196F3, left);
+        @include text-style(700, 26px, 'Raleway', 100%, #2196F3, left);
     }
 
     .menu {

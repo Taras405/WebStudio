@@ -30,7 +30,6 @@ button {
 .container {
   max-width: 1170px;
   margin: 0 auto;
-  outline: 1px solid red;
 }
 
 @media screen and (min-width: 320px) {
@@ -264,20 +263,13 @@ input[type=checkbox]:checked {
 
 .heading {
   font-weight: 700;
-  font-size: calc(24px + 1vw);
+  font-size: 24px;
   font-family: "Raleway";
   line-height: 0.3;
   color: #2196F3;
   text-align: left;
   letter-spacing: 3%;
   font-family: "Raleway", sans-serif;
-  -webkit-transition: 250ms linear;
-  transition: 250ms linear;
-}
-.heading:hover {
-  margin-top: -5px;
-  -webkit-transition: 250ms linear;
-  transition: 250ms linear;
 }
 .heading__studio {
   color: #212121;
@@ -359,12 +351,13 @@ input[type=checkbox]:checked {
 .menuburger__link {
   height: 48px;
   font-weight: 500;
-  font-size: calc(40px + 1vw);
+  font-size: 40px;
   font-family: "Roboto";
-  line-height: 1;
+  line-height: 100%;
   color: #212121;
   text-align: left;
   letter-spacing: 3%;
+  font-family: "Roboto", sans-serif;
   -webkit-transition: 250ms linear;
   transition: 250ms linear;
 }
@@ -390,12 +383,13 @@ input[type=checkbox]:checked {
 }
 .tie__contact {
   font-weight: 500;
-  font-size: calc(24px + 1vw);
+  font-size: 24px;
   font-family: "Roboto";
-  line-height: 1;
+  line-height: 100%;
   color: #757575;
   text-align: left;
   letter-spacing: 3%;
+  font-family: "Roboto", sans-serif;
   -webkit-transition: 250ms linear;
   transition: 250ms linear;
 }
@@ -468,30 +462,32 @@ input[type=checkbox]:checked {
     gap: 52px;
   }
   .menu__links {
-    font-weight: 500;
-    font-size: 14px;
-    font-family: "Roboto";
-    line-height: 1;
-    color: #212121;
-    text-align: none;
-    letter-spacing: 3%;
-    font-family: "Roboto", sans-serif;
     position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: end;
-        -ms-flex-align: end;
-            align-items: end;
-    margin-bottom: -16px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-transition: color 250ms linear;
-    transition: color 250ms linear;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    margin-bottom: -16px;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: "Roboto";
+    line-height: 100%;
+    color: #212121;
+    text-align: none;
+    letter-spacing: 3%;
+    font-family: "Roboto", sans-serif;
+    -webkit-transition: 250ms linear;
+    transition: 250ms linear;
   }
   .menu__links:hover {
+    -webkit-transition: 250ms linear;
+    transition: 250ms linear;
     color: #2196F3;
   }
   .menu__links::after {
@@ -608,7 +604,7 @@ input[type=checkbox]:checked {
     font-weight: 700;
     font-size: 26px;
     font-family: "Raleway";
-    line-height: 1;
+    line-height: 100%;
     color: #2196F3;
     text-align: left;
     letter-spacing: 3%;
@@ -643,6 +639,8 @@ input[type=checkbox]:checked {
           flex-direction: column;
 }
 .contact__heading {
+  margin: 0;
+  margin-bottom: 20px;
   font-weight: 700;
   font-size: 24px;
   font-family: "Raleway";
@@ -939,7 +937,7 @@ input[type=checkbox]:checked {
 }
 .section2 {
   display: block;
-  margin-top: 60px;
+  padding-top: 60px;
 }
 
 .advantage__block {
@@ -1005,7 +1003,7 @@ input[type=checkbox]:checked {
 }
 @media (min-width: 1024px) {
   .section2 {
-    margin-top: 94px;
+    padding-top: 94px;
   }
   .advantage {
     width: 270px;
@@ -1017,12 +1015,11 @@ input[type=checkbox]:checked {
 }
 .section3 {
   display: none;
-  margin-top: 94px;
+  padding-top: 60px;
 }
 
 .doing {
   margin: 0;
-  padding-top: 60px;
   margin-bottom: 30px;
   font-weight: 700;
   font-size: 36px;
@@ -1033,6 +1030,11 @@ input[type=checkbox]:checked {
   letter-spacing: 3%;
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.3px;
+}
+@media (min-width: 1024px) {
+  .doing {
+    margin-bottom: 50px;
+  }
 }
 
 .producebox {
@@ -1069,15 +1071,21 @@ input[type=checkbox]:checked {
 @media (min-width: 1024px) {
   .section3 {
     display: block;
-  }
-  .doing {
-    padding-top: 50px;
-    margin-bottom: 50px;
+    padding-top: 94px;
   }
 }
 .section4 {
   margin-top: 60px;
   background-color: #F5F4FA;
+}
+
+.indent {
+  padding-top: 60px;
+}
+@media (min-width: 1024px) {
+  .indent {
+    padding-top: 94px;
+  }
 }
 
 .cardbox {
@@ -1092,6 +1100,7 @@ input[type=checkbox]:checked {
       -ms-flex-pack: center;
           justify-content: center;
   padding: 0;
+  margin: 0;
   padding-bottom: 60px;
 }
 
@@ -1235,7 +1244,7 @@ input[type=checkbox]:checked {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   gap: 30px;
 }
 .client__logo {
@@ -1249,6 +1258,8 @@ input[type=checkbox]:checked {
   transition: 250ms linear;
 }
 .client__logo:hover, .client__logo:active {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   border-color: #2196F3;
   fill: #2196F3;
   -webkit-transition: 250ms linear;
@@ -1262,7 +1273,7 @@ input[type=checkbox]:checked {
 }
 @media (min-width: 1024px) {
   .client {
-    margin-bottom: 94px;
+    padding-bottom: 94px;
   }
   .client__logo {
     width: 170px;

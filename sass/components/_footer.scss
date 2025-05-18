@@ -11,6 +11,8 @@
     flex-direction: column;
 
     &__heading {
+        margin: 0;
+        margin-bottom: 20px;
         @include text-style(700, 24px, 'Raleway', 100%, #2196F3, center);
         font-family: 'Raleway', sans-serif;
         letter-spacing: 0.3px;

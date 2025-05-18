@@ -1,15 +1,19 @@
 .section3 {
     display: none;
-    margin-top: 94px;
+    padding-top: 60px;
 }
 
 .doing {
     margin: 0;
-    padding-top: 60px;
     margin-bottom: 30px;
     @include text-style(700, 36px, 'Roboto', 100%, #212121, center);
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.3px;
+
+    @media (min-width: 1024px) {
+
+        margin-bottom: 50px;
+    }
 }
 
 .producebox {
@@ -39,10 +43,6 @@
 @media (min-width: 1024px) {
     .section3 {
         display: block;
-    }
-
-    .doing {
-        padding-top: 50px;
-        margin-bottom: 50px;
+        padding-top: 94px;
     }
 }
