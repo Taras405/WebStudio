@@ -431,6 +431,14 @@ input[type=checkbox]:checked {
   border-right: 1px solid #212121;
 }
 
+.activelink {
+  color: #2196F3 !important;
+}
+.activelink::after {
+  -webkit-transform: scaleY(1) !important;
+          transform: scaleY(1) !important;
+}
+
 @media (min-width: 425px) {
   .stories__social {
     font-weight: 500;

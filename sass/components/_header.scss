@@ -138,6 +138,14 @@
     }
 }
 
+.activelink {
+    color: #2196F3 !important;
+
+    &::after {
+        transform: scaleY(1) !important;
+    }
+}
+
 @media (min-width: 425px) {
     .stories {
         &__social {

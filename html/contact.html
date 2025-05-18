@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css">
+    <link rel="stylesheet" href="../css/main.min.css" />
+    <title>Contact</title>
+</head>
+
+<body>
+    <header class="container header">
+        <a href="../index.html" class="heading">Web<span class="heading__studio">Studio</span></a>
+        <nav class="menu">
+            <a href="../index.html" class="menu__links menu__finger">Студія
+                <svg class="menu__links--finger">
+                    <use href="../img/symbol-defs.svg#finger"></use>
+                </svg>
+            </a>
+            <a href="../html/portfolio.html" class="menu__links menu__finger">Портфоліо
+                <svg class="menu__links--finger">
+                    <use href="../img/symbol-defs.svg#finger"></use>
+                </svg>
+            </a>
+            <a href="../html/contact.html" class="menu__links menu__finger activelink">Контакти
+                <svg class="menu__links--finger">
+                    <use href="../img/symbol-defs.svg#finger"></use>
+                </svg>
+            </a>
+        </nav>
+        <nav class="contacts">
+            <a href="mailto:info@devstudio.com" class="contacts__link contacts__finger">
+                <svg class="contacts__link--svg">
+                    <use href="../img/symbol-defs.svg#email"></use>
+                </svg>
+                info@devstudio.com
+                <svg class="contacts__link--finger">
+                    <use href="../img/symbol-defs.svg#finger"></use>
+                </svg>
+            </a>
+            <a href="tel:+38 096 111 11 11" class="contacts__link contacts__finger">
+                <svg class="contacts__link--svg">
+                    <use href="../img/symbol-defs.svg#smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+                <svg class="contacts__link--finger">
+                    <use href="../img/symbol-defs.svg#finger"></use>
+                </svg>
+            </a>
+        </nav>
+        <button class="open-menu menu-toggle js-open-menu openmenu" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="openmenu__svg">
+                <use href="../img/symbol-defs.svg#burger-menu"></use>
+            </svg>
+        </button>
+
+        <article class="burger js-menu-container" id="mobile-menu" role="dialog" aria-hidden="true">
+            <button class="closemenu menu-toggle js-close-menu" aria-label="Close menu">
+                <svg class="closemenu__svg">
+                    <use href="../img/symbol-defs.svg#close"></use>
+                </svg>
+            </button>
+            <nav class="menuburger">
+                <a href="../index.html" class="menuburger__link">Студія</a>
+                <a href="../html/portfolio.html" class="menuburger__link">Портфоліо</a>
+                <a href="../html/contact.html" class="menuburger__link">Контакти</a>
+            </nav>
+            <nav class="tie">
+                <a href="tel:+380961111111" class="tie__contact">+38 096 111 11 11</a>
+                <a href="mailto:info@devstudio.com" class="tie__contact">info@devstudio.com</a>
+            </nav>
+            <nav class="stories">
+                <a href="https://www.instagram.com/" class="stories__social stories__social--line">Instagram</a>
+                <a href="https://x.com/" class="stories__social stories__social--line">Twitter</a>
+                <a href="https://uk-ua.facebook.com/" class="stories__social stories__social--line">Facebook</a>
+                <a href="https://www.linkedin.com/" class="stories__social">LinkedIn</a>
+            </nav>
+        </article>
+    </header>
+
+
+
+
+
+
+    <footer class="footer">
+        <aside class="container footer">
+            <aside class="contact">
+                <a href="../index.html">
+                    <h2 class="contact__heading">Web<span class="contact__heading--studio">Studio</span></h2>
+                </a>
+                <p class="contact__location">м. Київ, пр-т Лесі Українки, 26</p>
+                <a href="mailto:info@devstudio.com" class="contact__email">info@devstudio.com</a>
+                <a href="tel:+38 096 111 11 11" class="contact__tel">+38 096 111 11 11</a>
+            </aside>
+            <aside class="story">
+                <h2 class="story__head">приєднуйтесь</h2>
+                <aside class="storys">
+                    <a href="https://www.instagram.com/">
+                        <svg class="storys__svg">
+                            <use width="20" height="20" x="12" y="12" href="../img/symbol-defs.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a href="https://x.com/">
+                        <svg class="storys__svg">
+                            <use width="20" height="20" x="12" y="12" href="../img/symbol-defs.svg#twitter"></use>
+                        </svg>
+                    </a>
+                    <a href="https://uk-ua.facebook.com/">
+                        <svg class="storys__svg">
+                            <use width="20" height="20" x="12" y="12" href="../img/symbol-defs.svg#facebook"></use>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/">
+                        <svg class="storys__svg">
+                            <use width="20" height="20" x="12" y="12" href="../img/symbol-defs.svg#linkedin"></use>
+                        </svg>
+                    </a>
+                </aside>
+            </aside>
+            <aside class="subscribe">
+                <h2 class="subscribe__newsletter">Підпишіться на розсилку</h2>
+                <aside class="button">
+                    <label for="email"></label>
+                    <input type="email" placeholder="E-mail" class="button__input">
+                    <button class="button__send">
+                        Підписатися
+                        <svg class="button__send--svg">
+                            <use href="../img/symbol-defs.svg#send"></use>
+                        </svg>
+                    </button>
+                </aside>
+
+            </aside>
+        </aside>
+    </footer>
+    <script src="../js/trigger.js" type="module"></script>
+    <script src="../js/menu.js" type="module"></script>
+    <script src="../js/modal.js" type="module"></script>
+</body>
+
+</html>
