@@ -1302,4 +1302,44 @@ input[type=checkbox]:checked {
   background-color: #2196F3;
   -webkit-transition: 250ms linear;
   transition: 250ms linear;
+}
+
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 40px;
+  padding: 0;
+}
+
+.card {
+  margin: 0;
+}
+.card__name {
+  margin: 0 15px;
+  margin-top: 20px;
+  font-weight: 700;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  line-height: 36px;
+  color: #212121;
+  text-align: left;
+  letter-spacing: 0.3px;
+}
+.card__attribute {
+  margin: 0 15px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  line-height: 30px;
+  color: #757575;
+  text-align: left;
+  letter-spacing: 0.3px;
 }/*# sourceMappingURL=main.css.map */

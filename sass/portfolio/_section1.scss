@@ -23,3 +23,28 @@
         }
     }
 }
+
+.portfolio {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 40px;
+    padding: 0;
+}
+
+.card {
+    margin: 0;
+
+    &__name {
+        margin: 0 15px;
+        margin-top: 20px;
+        @include text-style(700, 18px, 'Roboto', 36px, #212121, left);
+    }
+
+    &__attribute {
+        margin: 0 15px;
+        margin-bottom: 20px;
+        @include text-style(400, 16px, 'Roboto', 30px, #757575, left);
+    }
+}
