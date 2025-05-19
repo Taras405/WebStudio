@@ -80,15 +80,28 @@
             </nav>
         </article>
     </header>
-    <aside class="container filter">
-        <button class="filter__button">Усі</button>
-        <button class="filter__button">Веб-сайти</button>
-        <button class="filter__button">Додатки</button>
-        <button class="filter__button">Дизайн</button>
-        <button class="filter__button">Маркетинг</button>
-    </aside>
-    <section class="container portfolio">
-
+    <section class="container">
+        <aside class="filter">
+            <button class="filter__button">Усі</button>
+            <button class="filter__button">Веб-сайти</button>
+            <button class="filter__button">Додатки</button>
+            <button class="filter__button">Дизайн</button>
+            <button class="filter__button">Маркетинг</button>
+        </aside>
+        <ul class="portfolio">
+            <li class="card">
+                <picture class="card__picture">
+                    <source srcset=" ../img/ 1x,  2x" media="(max-width: 420px)">
+                    <source srcset=" 1x,  2x"
+                        media="(min-width: 421px) and (max-width: 768px)">
+                    <source srcset=" 1x,  2x" media="(min-width: 769px)">
+                    <img src="" srcset=" 2x" class="card__picture--img"
+                        alt="picture-1-websyte">
+                </picture>
+                <h2 class="card__name">Технокряк</h2>
+                <p class="card_attribute">Веб-сайт</p>
+            </li>
+        </ul>
     </section>
 
 
