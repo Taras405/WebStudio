@@ -1321,6 +1321,28 @@ input[type=checkbox]:checked {
 .card {
   margin: 0;
 }
+.card__picture img {
+  height: 290px;
+}
+.card__description {
+  position: relative;
+  height: 294px;
+  margin: 0;
+  padding: 0;
+  margin-top: -294px;
+  padding: 67px 24px;
+  background-color: rgba(33, 150, 243, 0.8980392157);
+  font-weight: 400;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  line-height: 28px;
+  color: #FFFFFF;
+  text-align: left;
+  letter-spacing: 0.3px;
+  -webkit-transition: 250ms linear;
+  transition: 250ms linear;
+  opacity: 0;
+}
 .card__name {
   margin: 0 15px;
   margin-top: 20px;
@@ -1342,4 +1364,9 @@ input[type=checkbox]:checked {
   color: #757575;
   text-align: left;
   letter-spacing: 0.3px;
+}
+.card:hover, .card__description:hover {
+  opacity: 1;
+  -webkit-transition: 250ms linear;
+  transition: 250ms linear;
 }/*# sourceMappingURL=main.css.map */

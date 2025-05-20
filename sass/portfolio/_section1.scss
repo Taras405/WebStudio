@@ -36,6 +36,25 @@
 .card {
     margin: 0;
 
+    &__picture {
+        img {
+            height: 290px;
+        }
+    }
+
+    &__description {
+        position: relative;
+        height: 294px;
+        margin: 0;
+        padding: 0;
+        margin-top: -294px;
+        padding: 67px 24px;
+        background-color: #2196F3E5;
+        @include text-style(400, 18px, 'Roboto', 28px, #FFFFFF, left);
+        transition: 250ms linear;
+        opacity: 0;
+    }
+
     &__name {
         margin: 0 15px;
         margin-top: 20px;
@@ -46,5 +65,11 @@
         margin: 0 15px;
         margin-bottom: 20px;
         @include text-style(400, 16px, 'Roboto', 30px, #757575, left);
+    }
+
+    &:hover,
+    &__description:hover {
+        opacity: 1;
+        transition: 250ms linear;
     }
 }
