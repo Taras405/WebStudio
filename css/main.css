@@ -627,7 +627,7 @@ input[type=checkbox]:checked {
   padding: 30px 0;
 }
 
-.contact {
+.webstudio {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -636,7 +636,7 @@ input[type=checkbox]:checked {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.contact__heading {
+.webstudio__heading {
   margin: 0;
   margin-bottom: 20px;
   font-weight: 700;
@@ -650,10 +650,10 @@ input[type=checkbox]:checked {
   letter-spacing: 0.3px;
   cursor: pointer;
 }
-.contact__heading--studio {
+.webstudio__heading--studio {
   color: #FFFFFF;
 }
-.contact__location, .contact__email, .contact__tel {
+.webstudio__location, .webstudio__email, .webstudio__tel {
   margin: 0;
   margin-top: 8px;
   font-weight: 400;
@@ -666,13 +666,13 @@ input[type=checkbox]:checked {
   font-family: "Roboto", sans-serif;
   letter-spacing: 0.3px;
 }
-.contact__email, .contact__tel {
+.webstudio__email, .webstudio__tel {
   color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
   -webkit-transition: 250ms linear;
   transition: 250ms linear;
 }
-.contact__email:hover, .contact__email:active, .contact__tel:hover, .contact__tel:active {
+.webstudio__email:hover, .webstudio__email:active, .webstudio__tel:hover, .webstudio__tel:active {
   -webkit-transition: 250ms linear;
   transition: 250ms linear;
   color: #2196F3;
@@ -835,10 +835,10 @@ input[type=checkbox]:checked {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .contact__heading {
+  .webstudio__heading {
     text-align: left;
   }
-  .contact__location, .contact__email, .contact__tel {
+  .webstudio__location, .webstudio__email, .webstudio__tel {
     text-align: left;
   }
   .story__head {
@@ -1409,4 +1409,44 @@ input[type=checkbox]:checked {
   .card {
     width: 370px;
   }
+}
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 500px;
+}
+.contact__head {
+  margin-top: 60px;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: "Raleway", sans-serif;
+  line-height: 100%;
+  color: #2196F3;
+  text-align: center;
+  letter-spacing: 0.3px;
+  letter-spacing: 0.6px;
+}
+.contact__head--span {
+  color: #000000;
+}
+.contact__head__email {
+  margin: 0;
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  line-height: 24px;
+  color: #FFFFFF;
+  text-align: center;
+  letter-spacing: 0.3px;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.3px;
 }/*# sourceMappingURL=main.css.map */
