@@ -248,6 +248,10 @@ input[type=checkbox]:checked {
     height: 581px;
   }
 }
+.border {
+  border-bottom: 1px solid #ECECEC;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -255,11 +259,10 @@ input[type=checkbox]:checked {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 60px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-bottom: 1px solid #ECECEC;
+  height: 60px;
 }
 
 .heading {

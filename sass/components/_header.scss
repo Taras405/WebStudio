@@ -1,10 +1,14 @@
+.border {
+    border-bottom: 1px solid #ECECEC;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
-    height: 60px;
     align-items: center;
-    border-bottom: 1px solid #ECECEC;
+    height: 60px;
 }
+
 
 .heading {
     @include text-style(700, 24px, 'Raleway', 0.3, #2196F3, left);
