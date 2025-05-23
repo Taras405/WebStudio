@@ -1310,7 +1310,7 @@ input[type=checkbox]:checked {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
-.filter__button:hover, .filter__button:active {
+.filter__button:hover, .filter__button:focus {
   color: #FFFFFF;
   background-color: #2196F3;
   -webkit-transition: 250ms linear;
