@@ -18,6 +18,8 @@ html::-webkit-scrollbar {
 
 button,
 a {
+  margin: 0;
+  padding: 0;
   cursor: pointer;
   font-family: "Roboto", sans-serif;
 }
@@ -1421,32 +1423,111 @@ input[type=checkbox]:checked {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 500px;
+  text-align: center;
 }
 .contact__head {
+  width: 80px;
+  margin: 0 auto;
   margin-top: 60px;
+  margin-bottom: 20px;
   font-weight: 700;
-  font-size: 24px;
+  font-size: 28px;
   font-family: "Raleway", sans-serif;
   line-height: 100%;
   color: #2196F3;
   text-align: center;
   letter-spacing: 0.3px;
   letter-spacing: 0.6px;
+  cursor: pointer;
 }
 .contact__head--span {
   color: #000000;
 }
-.contact__head__email {
-  margin: 0;
-  margin-top: 8px;
+.contact__location {
+  margin-top: 20px;
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 14px;
   font-family: "Roboto", sans-serif;
   line-height: 24px;
-  color: #FFFFFF;
+  color: #212121;
   text-align: center;
   letter-spacing: 0.3px;
-  font-family: "Roboto", sans-serif;
   letter-spacing: 0.3px;
+}
+.contact__email, .contact__tel {
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  line-height: 24px;
+  color: #757575;
+  text-align: center;
+  letter-spacing: 0.3px;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  -webkit-transition: 250ms linear;
+  transition: 250ms linear;
+}
+.contact__email:hover, .contact__email:active, .contact__tel:hover, .contact__tel:active {
+  -webkit-transition: 250ms linear;
+  transition: 250ms linear;
+  color: #2196F3;
+}
+.contact__iframe {
+  height: 400px;
+  -webkit-box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.1607843137), 0 4px 4px 0 rgba(0, 0, 0, 0.0588235294), 0 1px 1px 0 rgba(0, 0, 0, 0.1215686275);
+          box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.1607843137), 0 4px 4px 0 rgba(0, 0, 0, 0.0588235294), 0 1px 1px 0 rgba(0, 0, 0, 0.1215686275);
+}
+
+@media (min-width: 768px) {
+  .contact__iframe {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1024px) {
+  .contact__head {
+    margin-top: 94px;
+    font-weight: 700;
+    font-size: 38px;
+    font-family: "Raleway", sans-serif;
+    line-height: 100%;
+    color: #2196F3;
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+  .contact__email, .contact__tel {
+    width: 190px;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    line-height: 24px;
+    color: #757575;
+    text-align: center;
+    letter-spacing: 0.3px;
+    letter-spacing: 0.3px;
+  }
+  .contact__location {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-weight: 400;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    line-height: 24px;
+    color: #212121;
+    text-align: center;
+    letter-spacing: 0.3px;
+    letter-spacing: 0.3px;
+  }
+  .contact__iframe {
+    width: 800px;
+    height: 800px;
+    margin: 0 auto;
+  }
 }/*# sourceMappingURL=main.css.map */
