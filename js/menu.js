@@ -7,7 +7,7 @@
       const isOpen = mobileMenu.classList.toggle('is-open');
       openMenuBtn.setAttribute('aria-expanded', isOpen);
       mobileMenu.setAttribute('aria-hidden', !isOpen);
-      document.body.style.overflow = isOpen ? 'hidden' : 'auto'; // Щоб заблокувати скролл при відкритому меню
+      document.body.style.overflow = isOpen ? 'hidden' : 'auto';
     };
   
     openMenuBtn.addEventListener('click', toggleMenu);
