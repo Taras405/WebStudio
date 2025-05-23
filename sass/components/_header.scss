@@ -9,7 +9,6 @@
     height: 60px;
 }
 
-
 .heading {
     @include text-style(700, 24px, 'Raleway', 0.3, #2196F3, left);
 
@@ -214,7 +213,6 @@
         column-gap: 30px;
         row-gap: 10px;
 
-
         &__link {
             @include text-style(500, 14px, 'Roboto', 100%, #757575, left);
             transition: 250ms linear;
@@ -235,7 +233,6 @@
                 --color1: #2196F3;
                 transition: 250ms linear;
             }
-
 
             &--finger {
                 width: 16px;
