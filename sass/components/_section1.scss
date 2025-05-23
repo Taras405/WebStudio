@@ -5,7 +5,7 @@
     justify-items: center;
     align-content: center;
 
-    background-image: url("../img/background.jpg");
+    background-image: url("../img/background.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -16,7 +16,7 @@
 (min-resolution: 192dpi),
 (min-resolution: 2dppx) {
     .section1 {
-        background-image: url("../img/background@2x.jpg");
+        background-image: url("../img/background@2x.webp");
     }
 }
 

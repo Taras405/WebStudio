@@ -867,7 +867,7 @@ input[type=checkbox]:checked {
   justify-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  background-image: url("../img/background.jpg");
+  background-image: url("../img/background.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -875,7 +875,7 @@ input[type=checkbox]:checked {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .section1 {
-    background-image: url("../img/background@2x.jpg");
+    background-image: url("../img/background@2x.webp");
   }
 }
 .busines {
