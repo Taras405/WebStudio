@@ -32,6 +32,7 @@ button {
 .container {
   max-width: 1170px;
   margin: 0 auto;
+  font-size: 2em;
 }
 
 @media screen and (min-width: 320px) {
