@@ -29,6 +29,66 @@ button {
           box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
+article,
+aside,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+nav,
+section {
+  display: block;
+}
+
+h1 {
+  margin-block: 0.67em;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+h2 {
+  margin-block: 0.83em;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+h3 {
+  margin-block: 1em;
+  font-size: 1.17em;
+  font-weight: bold;
+}
+
+h4 {
+  margin-block: 1.33em;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+h5 {
+  margin-block: 1.67em;
+  font-size: 0.83em;
+  font-weight: bold;
+}
+
+h6 {
+  margin-block: 2.33em;
+  font-size: 0.67em;
+  font-weight: bold;
+}
+
+:where(h1) {
+  margin-block: 0.67em;
+  font-size: 2em;
+}
+
+.doing {
+  margin-block: 0.67em;
+  font-size: 2em;
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
