@@ -84,6 +84,13 @@ h6 {
   font-size: 2em;
 }
 
+section h1,
+article h1,
+nav h1,
+aside h1 {
+  font-size: 2em;
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
