@@ -18,7 +18,9 @@
     <!-- Оптимізація продуктивності та безпека -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; img-src 'self' https://trusted.com; script-src 'self' https://cdnjs.cloudflare.com;">
+        content="script-src 'self' https://cdnjs.cloudflare.com 'sha256-vvt4KWwuNr51XfE5m+hzeNEGhiOfZzG97ccfqGsPwvE=';">
+    <meta http-equiv="Cache-Control" content="max-age=31536000, public">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains" />
 
     <link rel="icon" href="../img/icon.webp">
     <link rel="stylesheet" href="../css/modern-normalize.css">
@@ -275,22 +277,22 @@
             <aside class="story">
                 <h2 class="story__head">приєднуйтесь</h2>
                 <aside class="storys">
-                    <a href="https://www.instagram.com/">
+                    <a href="https://www.instagram.com/" aria-label="Перейти на сторінку">
                         <svg class="storys__svg">
                             <use width="20" height="20" x="12" y="12" href="../img/symbol-defs.svg#instagram"></use>
                         </svg>
                     </a>
                     <a href="https://x.com/">
-                        <svg class="storys__svg">
+                        <svg class="storys__svg" aria-label="Перейти на сторінку">
                             <use width="20" height="20" x="12" y="12" href="../img/symbol-defs.svg#twitter"></use>
                         </svg>
                     </a>
-                    <a href="https://uk-ua.facebook.com/">
+                    <a href="https://uk-ua.facebook.com/" aria-label="Перейти на сторінку">
                         <svg class="storys__svg">
                             <use width="20" height="20" x="12" y="12" href="../img/symbol-defs.svg#facebook"></use>
                         </svg>
                     </a>
-                    <a href="https://www.linkedin.com/">
+                    <a href="https://www.linkedin.com/" aria-label="Перейти на сторінку">
                         <svg class="storys__svg">
                             <use width="20" height="20" x="12" y="12" href="../img/symbol-defs.svg#linkedin"></use>
                         </svg>

@@ -18,8 +18,17 @@
 
     <!-- Оптимізація продуктивності та безпека -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-<meta http-equiv="Content-Security-Policy"
-    content="default-src 'self'; img-src 'self' https://trusted.com; script-src 'self' https://cdnjs.cloudflare.com 'unsafe-inline'; style-src 'self' 'unsafe-inline'; frame-src 'self' https://www.google.com;">
+    <meta http-equiv="Content-Security-Policy" content="
+        default-src 'self';
+        script-src 'self' https://cdnjs.cloudflare.com https://maps.googleapis.com https://maps.gstatic.com 'unsafe-inline';
+        style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
+        img-src 'self' https://maps.googleapis.com https://maps.gstatic.com data:;
+        font-src 'self' https://fonts.gstatic.com;
+        connect-src 'self' https://maps.googleapis.com https://maps.gstatic.com;
+        frame-src https://www.google.com;
+      ">
+    <meta http-equiv="Cache-Control" content="max-age=31536000, public">
+    <meta http-equiv="Strict-Transport-Security" content="max-age=31536000; includeSubDomains" />
 
 
     <link rel="icon" href="../img/icon.webp">
@@ -101,7 +110,7 @@
         </aside>
     </header>
     <section class="container contact">
-        <a href="../index.html">
+        <a href="../index.html" aria-label="Перейти на сторінку">
             <h2 class="contact__head">
                 W<span class="contact__head--span">S</span>
             </h2>
@@ -112,9 +121,11 @@
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d449.3283972440506!2d30.538288184881427!3d50.426475510537145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e033ecbe9%3A0x57a4dffefec77da0!2z0LHRg9C70YzQstCw0YAg0JvQtdGB0ZYg0KPQutGA0LDRl9C90LrQuCwgMjYsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1747860297931!5m2!1suk!2sua"
             class="contact__iframe" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade" sandbox="allow-scripts allow-same-origin" alt="google-maps"></iframe>
+            referrerpolicy="no-referrer-when-downgrade" sandbox="allow-scripts allow-same-origin"
+            alt="google-maps"></iframe>
     </section>
     <section class="section4">
+        
         <aside class="container">
             <h1 class="doing indent">Наша команда</h1>
             <ul class="cardbox">
@@ -130,23 +141,23 @@
                     <h2 class="person__name">Ігор Дем'яненко</h2>
                     <p class="person__work">Product Designer</p>
                     <aside class="person__svgbox">
-                        <a href="https://www.instagram.com/">
+                        <a href="https://www.instagram.com/" aria-label="Перейти на сторінку">
                             <svg class="person__svgbox--svg">
                                 <use width="20" height="20" y="12" x="12" href="../img/symbol-defs.svg#instagram"></use>
                             </svg>
                         </a>
-                        <a href="https://x.com/">
+                        <a href="https://x.com/" aria-label="Перейти на сторінку">
                             <svg class="person__svgbox--svg">
                                 <use width="20" height="20" y="12" x="12" href="../img/symbol-defs.svg#twitter">
                                 </use>
                             </svg>
                         </a>
-                        <a href="https://uk-ua.facebook.com/">
+                        <a href="https://uk-ua.facebook.com/" aria-label="Перейти на сторінку">
                             <svg class="person__svgbox--svg">
                                 <use width="20" height="20" y="12" x="12" href="../img/symbol-defs.svg#facebook"></use>
                             </svg>
                         </a>
-                        <a href="https://www.linkedin.com/">
+                        <a href="https://www.linkedin.com/" aria-label="Перейти на сторінку">
                             <svg class="person__svgbox--svg">
                                 <use width="20" height="20" y="12" x="12" href="../img/symbol-defs.svg#linkedin"></use>
                             </svg>
@@ -165,23 +176,23 @@
                     <h2 class="person__name">Ольга Рєпіна</h2>
                     <p class="person__work">Frontend Developer</p>
                     <aside class="person__svgbox">
-                        <a href="https://www.instagram.com/">
+                        <a href="https://www.instagram.com/" aria-label="Перейти на сторінку">
                             <svg class="person__svgbox--svg">
                                 <use width="20" height="20" y="12" x="12" href="../img/symbol-defs.svg#instagram"></use>
                             </svg>
                         </a>
                         <a href="https://x.com/">
-                            <svg class="person__svgbox--svg">
+                            <svg class="person__svgbox--svg" aria-label="Перейти на сторінку">
                                 <use width="20" height="20" y="12" x="12" href="../img/symbol-defs.svg#twitter">
                                 </use>
                             </svg>
                         </a>
-                        <a href="https://uk-ua.facebook.com/">
+                        <a href="https://uk-ua.facebook.com/" aria-label="Перейти на сторінку">
                             <svg class="person__svgbox--svg">
                                 <use width="20" height="20" y="12" x="12" href="../img/symbol-defs.svg#facebook"></use>
                             </svg>
                         </a>
-                        <a href="https://www.linkedin.com/">
+                        <a href="https://www.linkedin.com/" aria-label="Перейти на сторінку">
                             <svg class="person__svgbox--svg">
                                 <use width="20" height="20" y="12" x="12" href="../img/symbol-defs.svg#linkedin"></use>
                             </svg>
@@ -200,23 +211,23 @@
                     <h2 class="person__name">Микола Тарасов</h2>
                     <p class="person__work">Marketing</p>
                     <aside class="person__svgbox">
-                        <a href="https://www.instagram.com/">
+                        <a href="https://www.instagram.com/" aria-label="Перейти на сторінку">
                             <svg class="person__svgbox--svg">
                                 <use width="20" height="20" y="12" x="12" href="../img/symbol-defs.svg#instagram"></use>
                             </svg>
                         </a>
                         <a href="https://x.com/">
-                            <svg class="person__svgbox--svg">
+                            <svg class="person__svgbox--svg" aria-label="Перейти на сторінку">
                                 <use width="20" height="20" y="12" x="12" href="../img/symbol-defs.svg#twitter">
                                 </use>
                             </svg>
                         </a>
-                        <a href="https://uk-ua.facebook.com/">
+                        <a href="https://uk-ua.facebook.com/" aria-label="Перейти на сторінку">
                             <svg class="person__svgbox--svg">
                                 <use width="20" height="20" y="12" x="12" href="../img/symbol-defs.svg#facebook"></use>
                             </svg>
                         </a>
-                        <a href="https://www.linkedin.com/">
+                        <a href="https://www.linkedin.com/" aria-label="Перейти на сторінку">
                             <svg class="person__svgbox--svg">
                                 <use width="20" height="20" y="12" x="12" href="../img/symbol-defs.svg#linkedin"></use>
                             </svg>
@@ -235,23 +246,23 @@
                     <h2 class="person__name">Михайло Єрмаков</h2>
                     <p class="person__work">UI Designer</p>
                     <aside class="person__svgbox">
-                        <a href="https://www.instagram.com/">
+                        <a href="https://www.instagram.com/" aria-label="Перейти на сторінку">
                             <svg class="person__svgbox--svg">
                                 <use width="20" height="20" y="12" x="12" href="../img/symbol-defs.svg#instagram"></use>
                             </svg>
                         </a>
                         <a href="https://x.com/">
-                            <svg class="person__svgbox--svg">
+                            <svg class="person__svgbox--svg" aria-label="Перейти на сторінку">
                                 <use width="20" height="20" y="12" x="12" href="../img/symbol-defs.svg#twitter">
                                 </use>
                             </svg>
                         </a>
-                        <a href="https://uk-ua.facebook.com/">
+                        <a href="https://uk-ua.facebook.com/" aria-label="Перейти на сторінку">
                             <svg class="person__svgbox--svg">
                                 <use width="20" height="20" y="12" x="12" href="../img/symbol-defs.svg#facebook"></use>
                             </svg>
                         </a>
-                        <a href="https://www.linkedin.com/">
+                        <a href="https://www.linkedin.com/" aria-label="Перейти на сторінку">
                             <svg class="person__svgbox--svg">
                                 <use width="20" height="20" y="12" x="12" href="../img/symbol-defs.svg#linkedin"></use>
                             </svg>
@@ -274,22 +285,22 @@
             <aside class="story">
                 <h2 class="story__head">приєднуйтесь</h2>
                 <aside class="storys">
-                    <a href="https://www.instagram.com/">
+                    <a href="https://www.instagram.com/" aria-label="Перейти на сторінку">
                         <svg class="storys__svg">
                             <use width="20" height="20" x="12" y="12" href="../img/symbol-defs.svg#instagram"></use>
                         </svg>
                     </a>
-                    <a href="https://x.com/">
+                    <a href="https://x.com/" aria-label="Перейти на сторінку">
                         <svg class="storys__svg">
                             <use width="20" height="20" x="12" y="12" href="../img/symbol-defs.svg#twitter"></use>
                         </svg>
                     </a>
-                    <a href="https://uk-ua.facebook.com/">
+                    <a href="https://uk-ua.facebook.com/" aria-label="Перейти на сторінку">
                         <svg class="storys__svg">
                             <use width="20" height="20" x="12" y="12" href="../img/symbol-defs.svg#facebook"></use>
                         </svg>
                     </a>
-                    <a href="https://www.linkedin.com/">
+                    <a href="https://www.linkedin.com/" aria-label="Перейти на сторінку">
                         <svg class="storys__svg">
                             <use width="20" height="20" x="12" y="12" href="../img/symbol-defs.svg#linkedin"></use>
                         </svg>
