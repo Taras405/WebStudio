@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />А
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="Content-Language" content="uk">
     <meta name="author" content="Тарас">
@@ -18,11 +18,12 @@
 
     <!-- Оптимізація продуктивності та безпека -->
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
-    <meta http-equiv="Content-Security-Policy"
-        content="default-src 'self'; img-src 'self' https://trusted.com; script-src 'self' https://cdnjs.cloudflare.com;">
+<meta http-equiv="Content-Security-Policy"
+    content="default-src 'self'; img-src 'self' https://trusted.com; script-src 'self' https://cdnjs.cloudflare.com 'unsafe-inline'; style-src 'self' 'unsafe-inline'; frame-src 'self' https://www.google.com;">
+
 
     <link rel="icon" href="../img/icon.webp">
-    <link rel="stylesheet" href="./css/modern-normalize.css">
+    <link rel="stylesheet" href="../css/modern-normalize.css">
     <link rel="stylesheet" href="../css/main.min.css" />
     <title>Contact</title>
 </head>
@@ -111,7 +112,7 @@
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d449.3283972440506!2d30.538288184881427!3d50.426475510537145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cf0e033ecbe9%3A0x57a4dffefec77da0!2z0LHRg9C70YzQstCw0YAg0JvQtdGB0ZYg0KPQutGA0LDRl9C90LrQuCwgMjYsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1747860297931!5m2!1suk!2sua"
             class="contact__iframe" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            referrerpolicy="no-referrer-when-downgrade" sandbox="allow-scripts allow-same-origin" alt="google-maps"></iframe>
     </section>
     <section class="section4">
         <aside class="container">
