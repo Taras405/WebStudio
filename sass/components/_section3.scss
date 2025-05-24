@@ -7,7 +7,6 @@
     margin: 0;
     margin-bottom: 30px;
     @include text-style(700, 36px, 'Roboto', 100%, #212121, center);
-    font-family: 'Roboto', sans-serif;
     letter-spacing: 0.3px;
 
     @media (min-width: 1024px) {

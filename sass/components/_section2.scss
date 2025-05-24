@@ -22,13 +22,11 @@
         margin-top: 30px;
         text-align: center;
         @include text-style(700, 14px, 'Roboto', 100%, #212121, center);
-        font-family: 'Roboto', sans-serif;
         letter-spacing: 0.3px
     }
 
     &__description {
         @include text-style(400, 14px, 'Roboto', 24px, #757575, left);
-        font-family: 'Roboto', sans-serif;
     }
 }
 

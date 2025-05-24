@@ -39,14 +39,12 @@
     &__name {
         margin-top: 30px;
         @include text-style(500, 16px, 'Roboto', 100%, #212121, center);
-        font-family: 'Roboto', sans-serif;
         letter-spacing: 0.3px;
     }
 
     &__work {
         margin-top: 10px;
         @include text-style(400, 16px, 'Roboto', 100%, #757575, center);
-        font-family: 'Roboto', sans-serif;
         letter-spacing: 0.3px;
     }
 
@@ -123,14 +121,12 @@
         &__name {
             margin-top: 30px;
             @include text-style(500, 16px, 'Roboto', 100%, #212121, center);
-            font-family: 'Roboto', sans-serif;
             letter-spacing: 0.3px;
         }
 
         &__work {
             margin-top: 10px;
             @include text-style(400, 16px, 'Roboto', 100%, #757575, center);
-            font-family: 'Roboto', sans-serif;
             letter-spacing: 0.3px;
         }
     }
