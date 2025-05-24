@@ -29,5 +29,10 @@ WebStudio — це сучасна вебстудія, що створює шви
 Сайт містить грамотно налаштовані `meta`-теги, які покращують індексацію та вигляд у соцмережах:  
 - **SEO:**  
   ```html
-  <meta name="description" content="Сучасні швидкі сайти для бізнесу з SEO-оптимізацією.">
-  <meta name="author" content="Тарас">
+  <meta name="description"
+        content="Вебстудія, що створює сучасні, швидкі та зручні сайти для бізнесу. Замовте розробку сайту та отримайте якісний веб-дизайн з SEO-оптимізацією.">
+    <meta property="og:title" content="WebStudio – сучасні сайти для бізнесу">
+    <meta property="og:description" content="Замовте розробку сайту з SEO-оптимізацією та сучасним дизайном.">
+    <meta property="og:image" content="https://taras405.github.io/WebStudio/img/preview.jpg">
+    <meta property="og:url" content="https://taras405.github.io/WebStudio/">
+    <meta property="og:type" content="website">
