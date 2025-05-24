@@ -78,3 +78,8 @@ h6 {
   font-size: 0.67em;
   font-weight: bold;
 }
+
+:where(h1) {
+  margin-block: 0.67em;
+  font-size: 2em;
+}

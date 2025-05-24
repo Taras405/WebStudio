@@ -79,6 +79,11 @@ h6 {
   font-weight: bold;
 }
 
+:where(h1) {
+  margin-block: 0.67em;
+  font-size: 2em;
+}
+
 .container {
   max-width: 1170px;
   margin: 0 auto;
