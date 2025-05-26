@@ -114,6 +114,7 @@ button {
   padding: 4px;
   border: 1px solid rgba(0, 0, 0, 0.062745098);
   border-radius: 50%;
+  cursor: pointer;
 }
 .modal__close:hover, .modal__close:active {
   fill: #2196F3;
@@ -471,7 +472,6 @@ input[type=checkbox]:checked {
     -webkit-box-align: end;
         -ms-flex-align: end;
             align-items: end;
-    margin-bottom: -16px;
     font-weight: 500;
     font-size: 14px;
     font-family: "Roboto", sans-serif;
@@ -491,7 +491,7 @@ input[type=checkbox]:checked {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -16px;
+    bottom: -34px;
     width: 100%;
     height: 4px;
     background-color: #2196F3;
@@ -506,23 +506,6 @@ input[type=checkbox]:checked {
   .menu__links:hover::after {
     -webkit-transform: scaleY(1);
             transform: scaleY(1);
-  }
-  .menu__links--finger {
-    width: 16px;
-    height: 16px;
-    opacity: 0;
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
-    -webkit-transition: opacity 250ms linear, -webkit-transform 250ms linear;
-    transition: opacity 250ms linear, -webkit-transform 250ms linear;
-    transition: opacity 250ms linear, transform 250ms linear;
-    transition: opacity 250ms linear, transform 250ms linear, -webkit-transform 250ms linear;
-    pointer-events: none;
-  }
-  .menu__finger:hover .menu__links--finger {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
   }
   .contacts {
     display: -webkit-box;
@@ -563,25 +546,6 @@ input[type=checkbox]:checked {
     --color1: #2196F3;
     -webkit-transition: 250ms linear;
     transition: 250ms linear;
-  }
-  .contacts__link--finger {
-    width: 16px;
-    height: 16px;
-    position: relative;
-    left: -62%;
-    bottom: -16px;
-    opacity: 0;
-    -webkit-transform: translateY(5px);
-            transform: translateY(5px);
-    -webkit-transition: opacity 250ms linear, -webkit-transform 250ms linear;
-    transition: opacity 250ms linear, -webkit-transform 250ms linear;
-    transition: opacity 250ms linear, transform 250ms linear;
-    transition: opacity 250ms linear, transform 250ms linear, -webkit-transform 250ms linear;
-  }
-  .contacts__finger:hover .contacts__link--finger {
-    opacity: 1;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
   }
   .openmenu {
     display: none;
